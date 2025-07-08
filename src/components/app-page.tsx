@@ -51,9 +51,9 @@ export function PageComponent() {
           />
         </div>
         <h1 className="text-4xl font-bold mb-4">bugloper</h1>
-        <h3 className="text-2xl font-bold mb-4">Be competent! 🦾</h3>
+        <h3 className="text-2xl font-bold mb-">Words hold power—but without substance, they’re transparent.</h3>
         <p className="text-xl text-muted-foreground mb-8">
-          I am bugloper, an engineer who loves technologies.
+          I am bugloper—an engineer, a writer, a thinker, and a seeker.
         </p>
         <nav className="mb-8">
           <ul className="flex justify-center space-x-4">
