@@ -5,7 +5,8 @@
     <link>http://localhost:1313/blogs/</link>
     <description>Recent content in Blogs on bugloper</description>
     <generator>Hugo</generator>
-    <language>en-us</language>
+    <language>en-US</language>
+    <copyright>Copyright (c) 2025 bugloper</copyright>
     <lastBuildDate>Tue, 09 Dec 2025 03:06:40 +0600</lastBuildDate>
     <atom:link href="http://localhost:1313/blogs/index.xml" rel="self" type="application/rss+xml" />
     <item>

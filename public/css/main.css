@@ -72,7 +72,7 @@ body {
 
 .quote {
     font-size: 1.15rem;
-    color: #666;
+    color: #444;
     margin-bottom: 0.75rem;
     line-height: 1.7;
     font-weight: 400;
@@ -81,7 +81,7 @@ body {
 
 .bio {
     font-size: 1.15rem;
-    color: #666;
+    color: #444;
     line-height: 1.7;
     font-weight: 400;
 }
@@ -285,7 +285,7 @@ body {
 }
 
 .blog-post-card-description {
-    color: #666;
+    color: #444;
     line-height: 1.6;
     font-size: 0.95rem;
     margin-bottom: 1rem;
@@ -303,7 +303,7 @@ body {
     align-items: center;
     gap: 1rem;
     font-size: 0.875rem;
-    color: #999;
+    color: #666;
     margin-top: 1rem;
     padding-top: 1rem;
     border-top: 1px solid #f3f4f6;
@@ -346,7 +346,7 @@ body {
 }
 
 .blog-post-content {
-    color: #333;
+    color: #1a1a1a;
     line-height: 1.8;
     font-size: 1.1rem;
 }
@@ -413,7 +413,7 @@ body {
 }
 
 .subscribe-description {
-    color: #666;
+    color: #444;
     font-size: 0.95rem;
     margin-bottom: 1.5rem;
 }

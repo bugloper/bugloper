@@ -1,4 +1,4 @@
-baseURL = 'https://bugloper.com/'
+baseURL = 'https://bugloper.netlify.app/'
 languageCode = 'en-us'
 title = 'bugloper'
 theme = 'doks'

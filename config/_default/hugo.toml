@@ -1,5 +1,5 @@
 title = "bugloper"
-baseurl = "https://bugloper.com/"
+baseurl = "https://bugloper.netlify.app/"
 disableAliases = true
 disableHugoGeneratorInject = true
 enableEmoji = true
