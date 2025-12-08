@@ -7,7 +7,7 @@ enableGitInfo = false
 enableRobotsTXT = true
 languageCode = "en-US"
 rssLimit = 10
-summarylength = 20
+summarylength = 70
 
 # Multilingual
 defaultContentLanguage = "en"

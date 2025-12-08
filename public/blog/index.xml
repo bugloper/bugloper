@@ -2,18 +2,18 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Blog on bugloper</title>
-    <link>http://localhost:49510/blog/</link>
+    <link>http://localhost:51392/blog/</link>
     <description>Recent content in Blog on bugloper</description>
     <generator>Hugo</generator>
     <language>en-US</language>
     <copyright>Copyright (c) 2025 bugloper</copyright>
     <lastBuildDate>Thu, 07 Sep 2023 16:27:22 +0200</lastBuildDate>
-    <atom:link href="http://localhost:49510/blog/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:51392/blog/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Example Post</title>
-      <link>http://localhost:49510/blog/example/</link>
+      <link>http://localhost:51392/blog/example/</link>
       <pubDate>Thu, 07 Sep 2023 16:27:22 +0200</pubDate>
-      <guid>http://localhost:49510/blog/example/</guid>
+      <guid>http://localhost:51392/blog/example/</guid>
       <description>You can use blog posts for announcing product updates and features.</description>
     </item>
   </channel>

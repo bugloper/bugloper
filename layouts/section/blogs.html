@@ -5,14 +5,29 @@
         
         <div class="blog-list">
             {{ range .Pages }}
-            <article class="blog-post-item">
-                <h2 class="blog-post-title">
+            <article class="blog-post-card">
+                <h2 class="blog-post-card-title">
                     <a href="{{ .Permalink }}">{{ .Title }}</a>
                 </h2>
-                <time class="blog-post-date">{{ .Date.Format "January 2, 2006" }}</time>
                 {{ if .Summary }}
-                <p class="blog-post-excerpt">{{ .Summary }}</p>
+                <p class="blog-post-card-description">{{ .Summary | plainify | truncate 150 }}</p>
+                {{ else if .Description }}
+                <p class="blog-post-card-description">{{ .Description | truncate 150 }}</p>
+                {{ else }}
+                <p class="blog-post-card-description">{{ .Content | plainify | truncate 150 }}</p>
                 {{ end }}
+                <div class="blog-post-card-meta">
+                    <time class="blog-post-card-date">{{ .Date.Format "January 2, 2006" }}</time>
+                    {{ if .ReadingTime }}
+                    <span class="blog-post-card-reading-time">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <circle cx="12" cy="12" r="10"></circle>
+                            <polyline points="12 6 12 12 16 14"></polyline>
+                        </svg>
+                        {{ .ReadingTime }} {{ if eq .ReadingTime 1 }}minute{{ else }}minutes{{ end }}
+                    </span>
+                    {{ end }}
+                </div>
             </article>
             {{ end }}
         </div>
