@@ -13,7 +13,11 @@
             
             <div class="blog-subscribe">
                 <h3 class="subscribe-title">Subscribe to my blog</h3>
-                <form class="subscribe-form" action="#" method="post" id="blog-subscribe-form">
+                <form class="subscribe-form" action="https://api.web3forms.com/submit" method="POST" id="blog-subscribe-form">
+                    <input type="hidden" name="access_key" value="2bb4a9c6-b5e1-41c1-92f4-1ea5ef778d12">
+                    <input type="hidden" name="subject" value="New Blog Subscription">
+                    <!-- Honeypot field for spam protection -->
+                    <input type="checkbox" name="botcheck" class="hidden" style="display: none;" tabindex="-1" autocomplete="off">
                     <div class="subscribe-input-group">
                         <input 
                             type="email" 
@@ -24,7 +28,7 @@
                             required
                             aria-label="Email address"
                         >
-                        <button type="submit" class="subscribe-button">Subscribe</button>
+                        <button type="submit" class="subscribe-button" id="subscribe-button">Subscribe</button>
                     </div>
                 </form>
                 <p class="subscribe-message" id="subscribe-message"></p>

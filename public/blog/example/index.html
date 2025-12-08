@@ -1,9 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
-<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=60097&amp;path=livereload" data-no-instant defer></script>
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=49510&amp;path=livereload" data-no-instant defer></script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Example Post</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/css/main.css">
 </head>
 <body>
@@ -27,7 +30,11 @@
             
             <div class="blog-subscribe">
                 <h3 class="subscribe-title">Subscribe to my blog</h3>
-                <form class="subscribe-form" action="#" method="post" id="blog-subscribe-form">
+                <form class="subscribe-form" action="https://api.web3forms.com/submit" method="POST" id="blog-subscribe-form">
+                    <input type="hidden" name="access_key" value="2bb4a9c6-b5e1-41c1-92f4-1ea5ef778d12">
+                    <input type="hidden" name="subject" value="New Blog Subscription">
+                    
+                    <input type="checkbox" name="botcheck" class="hidden" style="display: none;" tabindex="-1" autocomplete="off">
                     <div class="subscribe-input-group">
                         <input 
                             type="email" 
@@ -38,7 +45,7 @@
                             required
                             aria-label="Email address"
                         >
-                        <button type="submit" class="subscribe-button">Subscribe</button>
+                        <button type="submit" class="subscribe-button" id="subscribe-button">Subscribe</button>
                     </div>
                 </form>
                 <p class="subscribe-message" id="subscribe-message"></p>

@@ -6,7 +6,7 @@
 }
 
 body {
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
     line-height: 1.6;
     color: #333;
     background-color: #e8e8e8;
@@ -14,6 +14,8 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 }
 
 /* Home Container */
@@ -54,11 +56,13 @@ body {
 
 /* Name */
 .name {
-    font-size: 2.5rem;
+    font-family: 'Space Grotesk', 'Inter', sans-serif;
+    font-size: 3.5rem;
     font-weight: 700;
     color: #1a1a1a;
     margin-bottom: 2rem;
-    letter-spacing: -0.02em;
+    letter-spacing: -0.03em;
+    line-height: 1.1;
 }
 
 /* Description */
@@ -67,17 +71,18 @@ body {
 }
 
 .quote {
-    font-size: 1rem;
+    font-size: 1.15rem;
     color: #666;
     margin-bottom: 0.75rem;
-    line-height: 1.6;
+    line-height: 1.7;
     font-weight: 400;
+    font-style: italic;
 }
 
 .bio {
-    font-size: 1rem;
+    font-size: 1.15rem;
     color: #666;
-    line-height: 1.6;
+    line-height: 1.7;
     font-weight: 400;
 }
 
@@ -93,10 +98,11 @@ body {
 .nav-link {
     color: #333;
     text-decoration: none;
-    font-size: 1rem;
-    font-weight: 400;
+    font-size: 1.1rem;
+    font-weight: 500;
     transition: color 0.2s ease;
     position: relative;
+    letter-spacing: 0.01em;
 }
 
 .nav-link:hover {
@@ -149,7 +155,12 @@ body {
 /* Responsive Design */
 @media (max-width: 768px) {
     .name {
-        font-size: 2rem;
+        font-size: 2.5rem;
+    }
+
+    .quote,
+    .bio {
+        font-size: 1.05rem;
     }
 
     .profile-pic {
@@ -178,7 +189,16 @@ body {
 
 @media (max-width: 480px) {
     .name {
-        font-size: 1.75rem;
+        font-size: 2rem;
+    }
+
+    .quote,
+    .bio {
+        font-size: 1rem;
+    }
+
+    .nav-link {
+        font-size: 1rem;
     }
 
     .profile-pic {
@@ -407,6 +427,12 @@ body {
 
 .subscribe-button:active {
     transform: translateY(1px);
+}
+
+.subscribe-button:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+    transform: none;
 }
 
 .subscribe-message {

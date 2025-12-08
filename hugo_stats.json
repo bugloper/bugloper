@@ -47,6 +47,7 @@
       "blog-wrapper",
       "content-wrapper",
       "description",
+      "hidden",
       "home-container",
       "name",
       "nav-link",
@@ -66,6 +67,7 @@
     "ids": [
       "blog-subscribe-form",
       "further-reading",
+      "subscribe-button",
       "subscribe-email",
       "subscribe-message"
     ]
