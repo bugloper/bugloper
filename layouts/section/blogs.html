@@ -1,0 +1,21 @@
+{{ define "main" }}
+<div class="blog-container">
+    <div class="blog-wrapper">
+        <h1 class="blog-title">{{ .Title }}</h1>
+        
+        <div class="blog-list">
+            {{ range .Pages }}
+            <article class="blog-post-item">
+                <h2 class="blog-post-title">
+                    <a href="{{ .Permalink }}">{{ .Title }}</a>
+                </h2>
+                <time class="blog-post-date">{{ .Date.Format "January 2, 2006" }}</time>
+                {{ if .Summary }}
+                <p class="blog-post-excerpt">{{ .Summary }}</p>
+                {{ end }}
+            </article>
+            {{ end }}
+        </div>
+    </div>
+</div>
+{{ end }}

@@ -1,0 +1,48 @@
+title = "bugloper"
+baseurl = "https://bugloper.com/"
+disableAliases = true
+disableHugoGeneratorInject = true
+enableEmoji = true
+enableGitInfo = false
+enableRobotsTXT = true
+languageCode = "en-US"
+rssLimit = 10
+summarylength = 20
+
+# Multilingual
+defaultContentLanguage = "en"
+disableLanguages = ["de", "nl"]
+defaultContentLanguageInSubdir = false
+
+copyRight = "Copyright (c) 2025 bugloper"
+
+[build.buildStats]
+  enable = true
+
+[outputs]
+  home = ["HTML", "RSS", "searchIndex"]
+  section = ["HTML", "RSS", "SITEMAP"]
+
+[outputFormats.searchIndex]
+  mediaType = "application/json"
+  baseName = "search-index"
+  isPlainText = true
+  notAlternative = true
+
+[outputFormats.SITEMAP]
+  mediaType = "application/xml"
+  baseName = "sitemap"
+  isHTML = false
+  isPlainText = true
+  noUgly = true
+  rel  = "sitemap"
+
+[sitemap]
+  changefreq = "monthly"
+  filename = "sitemap.xml"
+  priority = 0.5
+
+[caches]
+  [caches.getjson]
+    dir = ":cacheDir/:project"
+    maxAge = -1

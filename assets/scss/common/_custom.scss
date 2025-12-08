@@ -1,0 +1,23 @@
+// Custom styles for blog posts
+.blog-post-content,
+.content-body,
+article p {
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+// Ensure headings remain left-aligned
+.blog-post-content h1,
+.blog-post-content h2,
+.blog-post-content h3,
+.blog-post-content h4,
+.blog-post-content h5,
+.blog-post-content h6,
+.content-body h1,
+.content-body h2,
+.content-body h3,
+.content-body h4,
+.content-body h5,
+.content-body h6 {
+  text-align: left;
+}

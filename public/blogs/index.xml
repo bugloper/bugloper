@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Blogs on bugloper</title>
+    <link>http://localhost:60097/blogs/</link>
+    <description>Recent content in Blogs on bugloper</description>
+    <generator>Hugo</generator>
+    <language>en-US</language>
+    <copyright>Copyright (c) 2025 bugloper</copyright>
+    <lastBuildDate>Tue, 09 Dec 2025 03:06:40 +0600</lastBuildDate>
+    <atom:link href="http://localhost:60097/blogs/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>The Curse of Curiosity</title>
+      <link>http://localhost:60097/blogs/the-curse-of-curiosity/</link>
+      <pubDate>Tue, 09 Dec 2025 03:06:40 +0600</pubDate>
+      <guid>http://localhost:60097/blogs/the-curse-of-curiosity/</guid>
+      <description>&lt;p&gt;Curiosity is often hailed as a virtue—a driving force behind innovation, discovery, and personal growth. From childhood questions like “Why is the sky blue?” to adult quests for knowledge in science, technology, and philosophy, curiosity fuels our desire to explore the unknown. Yet, like any powerful force, curiosity carries its shadow side. Sometimes, what we seek to uncover can lead not to enlightenment, but to consequences we did not anticipate. This is the essence of the curse of curiosity.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

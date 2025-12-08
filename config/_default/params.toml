@@ -1,0 +1,52 @@
+# Hugo
+title = "bugloper"
+description = "I am bugloper—an engineer, a writer, a thinker, and a seeker."
+images = []
+
+# mainSections
+mainSections = ["blogs"]
+
+[social]
+  github = "bugloper"
+  linkedin = "nima-yonten-a03995227"
+  twitter = "bugloper"
+
+# Doks (@thulite/doks-core)
+[doks]
+  # Color mode
+  colorMode = "auto" # auto (default), light or dark
+  colorModeToggler = true # true (default) or false
+
+  # Navbar
+  navbarSticky = true # true (default) or false
+  containerBreakpoint = "lg" # "", "sm", "md", "lg" (default), "xl", "xxl", or "fluid"
+
+  ## Button
+  navBarButton = false # false (default) or true
+  navBarButtonUrl = "/blogs"
+  navBarButtonText = "Blogs"
+
+  # FlexSearch
+  flexSearch = true # true (default) or false
+  searchExclKinds = [] # list of page kinds to exclude from search indexing
+  searchExclTypes = [] # list of content types to exclude from search indexing
+  showSearch = [] # [] (all pages, default) or homepage (optionally) and list of sections
+  indexSummary = false # true or false (default)
+
+  ## Search results
+  showDate = false # false (default) or true
+  showSummary = true # true (default) or false
+  searchLimit = 99 # 0 (no limit, default) or natural number
+
+  # Global alert
+  alert = false # false (default) or true
+  alertDismissable = true # true (default) or false
+
+  # Bootstrap
+  bootstrapJavascript = false # false (default) or true
+
+  # Nav
+  sectionNav = ["blogs"] # ["docs"] (default) or list of sections
+  toTopButton = false # false (default) or true
+  breadcrumbTrail = false # false (default) or true
+  headlineHash = true # true (default) or false

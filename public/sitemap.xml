@@ -1,1 +1,21 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml"><url><loc>https://bugloper.com/</loc></url><url><loc>https://bugloper.com/categories/</loc></url><url><loc>https://bugloper.com/tags/</loc></url></urlset>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  
+  <sitemap>
+    <loc>http://localhost:1313/en/sitemap.xml</loc>
+    
+      <lastmod>2025-12-09T03:06:40+06:00</lastmod>
+    
+  </sitemap>
+  
+  <sitemap>
+    <loc>http://localhost:1313/de/sitemap.xml</loc>
+    
+  </sitemap>
+  
+  <sitemap>
+    <loc>http://localhost:1313/nl/sitemap.xml</loc>
+    
+  </sitemap>
+  
+</sitemapindex>
