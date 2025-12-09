@@ -13,6 +13,6 @@ I specialize in backend development, crafting robust, scalable, and efficient ap
 I love creating useful tools, exploring new tech, and building exciting projects from scratch.
 
 ## Connect with Me
-Visit my website: [bugloper.netlify.app](https://bugloper.netlify.app)
+Visit my website: [bugloper.com](https://bugloper.com)
 
 Feel free to explore my repositories, contribute, or reach out for collaboration!
