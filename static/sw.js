@@ -1,7 +1,6 @@
 // Service Worker for PWA functionality
-const CACHE_NAME = 'bugloper-v2';
-const urlsToCache = [
-  '/',
+const CACHE_NAME = 'bugloper-v3';
+const STATIC_ASSETS = [
   '/css/main.css',
   '/js/main.js',
   '/icon.svg',
@@ -9,13 +8,13 @@ const urlsToCache = [
   '/favicon.ico'
 ];
 
-// Install event - cache resources
+// Install event - cache static resources only
 self.addEventListener('install', (event) => {
   event.waitUntil(
     caches.open(CACHE_NAME)
       .then((cache) => {
         console.log('Opened cache');
-        return cache.addAll(urlsToCache);
+        return cache.addAll(STATIC_ASSETS);
       })
       .catch((error) => {
         console.error('Cache failed:', error);
@@ -43,40 +42,90 @@ self.addEventListener('activate', (event) => {
   return self.clients.claim();
 });
 
-// Fetch event - serve from cache, fallback to network
+// Helper function to check if request is for HTML page
+function isHtmlRequest(request) {
+  return request.mode === 'navigate' || 
+         (request.method === 'GET' && 
+          request.headers.get('accept')?.includes('text/html'));
+}
+
+// Helper function to check if request is for static asset
+function isStaticAsset(request) {
+  const url = new URL(request.url);
+  return url.pathname.match(/\.(css|js|png|jpg|jpeg|gif|svg|ico|woff|woff2|ttf|eot)$/i) ||
+         STATIC_ASSETS.some(asset => url.pathname === asset);
+}
+
+// Fetch event - network-first for HTML, cache-first for static assets
 self.addEventListener('fetch', (event) => {
-  event.respondWith(
-    caches.match(event.request)
-      .then((response) => {
-        // Cache hit - return response
-        if (response) {
+  const request = event.request;
+  
+  // Skip non-GET requests
+  if (request.method !== 'GET') {
+    return;
+  }
+
+  // Network-first strategy for HTML pages (always get fresh content)
+  if (isHtmlRequest(request)) {
+    event.respondWith(
+      fetch(request)
+        .then((response) => {
+          // Don't cache HTML pages - always fetch fresh
           return response;
-        }
+        })
+        .catch(() => {
+          // If network fails, try cache as fallback
+          return caches.match(request).then((cachedResponse) => {
+            if (cachedResponse) {
+              return cachedResponse;
+            }
+            // If no cache, return offline page for navigation requests
+            if (request.mode === 'navigate') {
+              return caches.match('/');
+            }
+          });
+        })
+    );
+    return;
+  }
 
-        // Clone the request
-        const fetchRequest = event.request.clone();
+  // Cache-first strategy for static assets
+  if (isStaticAsset(request)) {
+    event.respondWith(
+      caches.match(request)
+        .then((cachedResponse) => {
+          if (cachedResponse) {
+            return cachedResponse;
+          }
 
-        return fetch(fetchRequest).then((response) => {
-          // Check if valid response
-          if (!response || response.status !== 200 || response.type !== 'basic') {
+          return fetch(request).then((response) => {
+            // Check if valid response
+            if (!response || response.status !== 200 || response.type !== 'basic') {
+              return response;
+            }
+
+            // Cache static assets
+            const responseToCache = response.clone();
+            caches.open(CACHE_NAME)
+              .then((cache) => {
+                cache.put(request, responseToCache);
+              });
+
             return response;
-          }
+          });
+        })
+    );
+    return;
+  }
 
-          // Clone the response
-          const responseToCache = response.clone();
-
-          caches.open(CACHE_NAME)
-            .then((cache) => {
-              cache.put(event.request, responseToCache);
-            });
-
-          return response;
-        }).catch(() => {
-          // If fetch fails and it's a navigation request, return offline page
-          if (event.request.mode === 'navigate') {
-            return caches.match('/');
-          }
-        });
+  // For other requests, use network-first
+  event.respondWith(
+    fetch(request)
+      .then((response) => {
+        return response;
+      })
+      .catch(() => {
+        return caches.match(request);
       })
   );
 });
