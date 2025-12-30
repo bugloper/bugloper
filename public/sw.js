@@ -1,5 +1,5 @@
 // Service Worker for PWA functionality
-const CACHE_NAME = 'bugloper-v1';
+const CACHE_NAME = 'bugloper-v2';
 const urlsToCache = [
   '/',
   '/css/main.css',

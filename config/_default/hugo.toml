@@ -8,6 +8,8 @@ enableRobotsTXT = true
 languageCode = "en-US"
 rssLimit = 10
 summarylength = 70
+buildFuture = true
+buildDrafts = false
 
 # Multilingual
 defaultContentLanguage = "en"
