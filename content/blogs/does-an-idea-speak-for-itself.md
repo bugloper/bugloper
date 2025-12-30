@@ -16,7 +16,7 @@ If someone tries to convey a unique idea with poor communication, it often leads
 
 
 
-The definition of things also plays a vital role. Even with articulate communication, if the speaker and the listener have fundamentally different understandings of the subject matter—what a particular word means in that particular context—it is no less confusing than poor communication.
+The definition of things also plays a vital role. Even with articulate communication, if the speaker and the listener have fundamentally different understandings of the subject matter—what a particular word means in that context—it is no less confusing than poor communication.
 
 
 
