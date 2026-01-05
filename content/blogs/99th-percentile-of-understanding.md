@@ -1,7 +1,7 @@
 +++
 date = '2026-01-05T19:48:50+06:00'
 draft = false
-title = '99th Percentile of Understanding'
+title = 'The 99th Percentile of Understanding'
 +++
 
 
