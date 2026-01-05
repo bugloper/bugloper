@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>99th Percentile of Understanding</title>
+    
+    
+    <meta name="theme-color" content="#000000">
+    <meta name="description" content="bugloper - Personal blog and portfolio">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="apple-mobile-web-app-title" content="bugloper">
+    <meta name="mobile-web-app-capable" content="yes">
+    
+    
+    <link rel="icon" href="/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="/icon.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+    <link rel="manifest" href="/manifest.json">
+    
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/main.css">
+</head>
+<body>
+    
+<div class="blog-container">
+    <div class="blog-wrapper">
+        <article class="blog-post">
+            <header class="blog-post-header">
+                <h1 class="blog-post-title">99th Percentile of Understanding</h1>
+                <time class="blog-post-date">January 5, 2026</time>
+            </header>
+            
+            <div class="blog-post-content">
+                <p>In retrospect, I realize I never truly had a teacher who taught me mathematics beyond formulas and mechanical steps for integration and differentiation. Only now, as I begin to understand how mathematics actually describes the universe, do I see how poorly this was conveyed. Phrases like <em>“integrate from 0 to ∞”</em> mean nothing to minds that haven’t yet grasped even basic arithmetic or algebra—especially when no one explains what differentiation and integration are meant to solve or represent in real problems.</p>
+<p>And yet, teachers often blame students for not paying attention in class. But it’s not really the students’ fault when the teachers themselves never fully understood what they were teaching. <a href="https://youtu.be/WUvTyaaNkzM?si=6fhjQZA8Vel0C0VP">This video</a>
+, The Essence of Calculus, explains the fundamentals of calculus so simply and clearly that it exposes how much of what we call “understanding” is really just memorized steps and formulas, devoid of any conceptual grounding.</p>
+<p>You can score good marks in exams without ever understanding the true meaning of calculus. Perhaps that’s a practical way to commercialize education—but it comes nowhere close to real understanding.</p>
+
+            </div>
+            
+            <div class="blog-subscribe">
+                <h3 class="subscribe-title">Subscribe to my blog</h3>
+                <form class="subscribe-form" action="https://api.web3forms.com/submit" method="POST" id="blog-subscribe-form">
+                    <input type="hidden" name="access_key" value="2bb4a9c6-b5e1-41c1-92f4-1ea5ef778d12">
+                    <input type="hidden" name="subject" value="New Blog Subscription">
+                    
+                    <input type="checkbox" name="botcheck" class="hidden" style="display: none;" tabindex="-1" autocomplete="off">
+                    <div class="subscribe-input-group">
+                        <input 
+                            type="email" 
+                            name="email" 
+                            id="subscribe-email" 
+                            class="subscribe-input" 
+                            placeholder="Enter your email" 
+                            required
+                            aria-label="Email address"
+                        >
+                        <button type="submit" class="subscribe-button" id="subscribe-button">Subscribe</button>
+                    </div>
+                </form>
+                <p class="subscribe-message" id="subscribe-message"></p>
+            </div>
+            
+            <footer class="blog-post-footer">
+                <a href="/blogs" class="back-link">← Back to Blogs</a>
+            </footer>
+        </article>
+    </div>
+</div>
+
+
+    <script src="/js/main.js"></script>
+    
+    
+    <script>
+        if ('serviceWorker' in navigator) {
+            window.addEventListener('load', () => {
+                navigator.serviceWorker.register('/sw.js')
+                    .then((registration) => {
+                        console.log('Service Worker registered successfully:', registration.scope);
+                    })
+                    .catch((error) => {
+                        console.log('Service Worker registration failed:', error);
+                    });
+            });
+        }
+    </script>
+</body>
+</html>

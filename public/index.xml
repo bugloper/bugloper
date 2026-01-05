@@ -7,7 +7,7 @@
     <generator>Hugo</generator>
     <language>en-US</language>
     <copyright>Copyright (c) 2025 bugloper</copyright>
-    <lastBuildDate>Tue, 09 Dec 2025 12:00:00 +0600</lastBuildDate>
+    <lastBuildDate>Mon, 05 Jan 2026 19:48:50 +0600</lastBuildDate>
     <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Example Post</title>
@@ -36,6 +36,13 @@
       <pubDate>Tue, 27 Feb 2024 09:30:56 +0100</pubDate>
       <guid>http://localhost:1313/docs/resources/</guid>
       <description>&lt;p&gt;Link to valuable, relevant resources.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>99th Percentile of Understanding</title>
+      <link>http://localhost:1313/blogs/99th-percentile-of-understanding/</link>
+      <pubDate>Mon, 05 Jan 2026 19:48:50 +0600</pubDate>
+      <guid>http://localhost:1313/blogs/99th-percentile-of-understanding/</guid>
+      <description>&lt;p&gt;In retrospect, I realize I’ve never really met a teacher who taught me mathematics&#xA;beyond formulas and mechanical steps for integration or differentiation. Only now,&#xA;as I begin to understand how mathematics describes the universe, do I see how poorly&#xA;that was conveyed. Phrases like “integrate from 0 to ∞” mean nothing to minds that&#xA;haven’t yet grasped even basic arithmetic and algebra, especially if no one explains&#xA;what differentiation and integration actually solve or represent in real problems.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Does An Idea Speak For Itself?</title>
