@@ -7,7 +7,7 @@
     <generator>Hugo</generator>
     <language>en-US</language>
     <copyright>Copyright (c) 2025 bugloper</copyright>
-    <lastBuildDate>Mon, 05 Jan 2026 19:48:50 +0600</lastBuildDate>
+    <lastBuildDate>Mon, 05 Jan 2026 20:00:00 +0600</lastBuildDate>
     <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Example Post</title>
@@ -38,6 +38,27 @@
       <description>&lt;p&gt;Link to valuable, relevant resources.&lt;/p&gt;</description>
     </item>
     <item>
+      <title>About</title>
+      <link>http://localhost:1313/about/</link>
+      <pubDate>Mon, 05 Jan 2026 20:00:00 +0600</pubDate>
+      <guid>http://localhost:1313/about/</guid>
+      <description>&lt;h2 id=&#34;who-i-am&#34;&gt;Who I Am&lt;/h2&gt;&#xA;&lt;p&gt;I&amp;rsquo;m a software engineer passionate about building meaningful tools and exploring the deeper questions that technology raises. I believe in the power of clear communication, both in code and in writing, and I&amp;rsquo;m constantly seeking to understand not just &lt;em&gt;how&lt;/em&gt; things work, but &lt;em&gt;why&lt;/em&gt; they matter.&lt;/p&gt;&#xA;&lt;h2 id=&#34;what-i-do&#34;&gt;What I Do&lt;/h2&gt;&#xA;&lt;p&gt;I build software, write code, and occasionally share my thoughts through writing. My work spans various domains—from creating Ruby gems that solve real problems to exploring reverse engineering and system design. I&amp;rsquo;m particularly interested in:&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Contact</title>
+      <link>http://localhost:1313/contact/</link>
+      <pubDate>Mon, 05 Jan 2026 20:00:00 +0600</pubDate>
+      <guid>http://localhost:1313/contact/</guid>
+      <description>&lt;p&gt;Get in touch with me.&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;Email:&lt;/strong&gt; &lt;a href=&#34;mailto:bugloper@hey.com&#34;&gt;bugloper@hey.com&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;GitHub:&lt;/strong&gt; &lt;a href=&#34;https://github.com/bugloper&#34;&gt;github.com/bugloper&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;LinkedIn:&lt;/strong&gt; &lt;a href=&#34;https://www.linkedin.com/in/nima-yonten-a03995227&#34;&gt;linkedin.com/in/nima-yonten-a03995227&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;Twitter/X:&lt;/strong&gt; &lt;a href=&#34;https://x.com/bugloper&#34;&gt;x.com/bugloper&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Projects</title>
+      <link>http://localhost:1313/projects/</link>
+      <pubDate>Mon, 05 Jan 2026 20:00:00 +0600</pubDate>
+      <guid>http://localhost:1313/projects/</guid>
+      <description>&lt;p&gt;Here are some of my projects and work.&lt;/p&gt;&#xA;&lt;h3 id=&#34;healthier&#34;&gt;&lt;a href=&#34;https://rubygems.org/search?query=healthier&#34;&gt;healthier&lt;/a&gt;&lt;/h3&gt;&#xA;&lt;p&gt;Healthier is a Ruby gem that exposes a standardized health-check endpoint for Rails applications, allowing you to monitor the availability and status of dependent services such as databases, caches, and external APIs.&lt;/p&gt;&#xA;&lt;h3 id=&#34;gotenberg&#34;&gt;&lt;a href=&#34;https://rubygems.org/gems/gotenberg&#34;&gt;gotenberg&lt;/a&gt;&lt;/h3&gt;&#xA;&lt;p&gt;A Ruby wrapper around &lt;a href=&#34;https://gotenberg.dev&#34;&gt;Gotenberg&lt;/a&gt; that simplifies PDF generation and document conversion by integrating seamlessly with the Rails asset pipeline.&lt;/p&gt;&#xA;&lt;h3 id=&#34;esrever&#34;&gt;&lt;a href=&#34;https://github.com/bugloper/esrever&#34;&gt;esrever&lt;/a&gt;&lt;/h3&gt;&#xA;&lt;p&gt;A lightweight reverse proxy written in Go, inspired by nginx, designed to efficiently route and forward HTTP traffic. Built as a hobby project for learning and experimentation.&lt;/p&gt;</description>
+    </item>
+    <item>
       <title>The 99th Percentile of Understanding</title>
       <link>http://localhost:1313/blogs/99th-percentile-of-understanding/</link>
       <pubDate>Mon, 05 Jan 2026 19:48:50 +0600</pubDate>
@@ -57,13 +78,6 @@
       <pubDate>Tue, 09 Dec 2025 03:06:40 +0600</pubDate>
       <guid>http://localhost:1313/blogs/the-curse-of-curiosity/</guid>
       <description>&lt;p&gt;I have one life, and in this life, I want to do everything. My mind is incredibly voracious—it yearns for everything the universe has to offer: science, philosophy, mathematics, poetry, socializing, music, sleep, quietness, emotions, infinity. That’s why I hate the phrase “jack of all trades, master of none.”&lt;/p&gt;&#xA;&lt;p&gt;One life—that’s it. That’s why you should try to do all the things you love.&#xA;But when it comes to curiosity, if you want to achieve something great in one domain, you need deep focus. The cost of this all-encompassing curiosity is that it often hinders doing what’s essential.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Privacy Policy</title>
-      <link>http://localhost:1313/privacy/</link>
-      <pubDate>Thu, 07 Sep 2023 17:19:07 +0200</pubDate>
-      <guid>http://localhost:1313/privacy/</guid>
-      <description></description>
     </item>
   </channel>
 </rss>
