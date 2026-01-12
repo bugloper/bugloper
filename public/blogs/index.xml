@@ -1,34 +1,7 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>Blogs on bugloper</title>
-    <link>http://localhost:1313/blogs/</link>
-    <description>Recent content in Blogs on bugloper</description>
-    <generator>Hugo</generator>
-    <language>en-US</language>
-    <copyright>Copyright (c) 2025 bugloper</copyright>
-    <lastBuildDate>Mon, 05 Jan 2026 19:48:50 +0600</lastBuildDate>
-    <atom:link href="http://localhost:1313/blogs/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>The 99th Percentile of Understanding</title>
-      <link>http://localhost:1313/blogs/99th-percentile-of-understanding/</link>
-      <pubDate>Mon, 05 Jan 2026 19:48:50 +0600</pubDate>
-      <guid>http://localhost:1313/blogs/99th-percentile-of-understanding/</guid>
-      <description>&lt;p&gt;In retrospect, I realize I never truly had a teacher who taught me mathematics beyond formulas and mechanical steps for integration and differentiation. Only now, as I begin to understand how mathematics actually describes the universe, do I see how poorly this was conveyed. Phrases like &lt;em&gt;“integrate from 0 to ∞”&lt;/em&gt; mean nothing to minds that haven’t yet grasped even basic arithmetic or algebra—especially when no one explains what differentiation and integration are meant to solve or represent in real problems.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Does An Idea Speak For Itself?</title>
-      <link>http://localhost:1313/blogs/does-an-idea-speak-for-itself/</link>
-      <pubDate>Tue, 09 Dec 2025 12:00:00 +0600</pubDate>
-      <guid>http://localhost:1313/blogs/does-an-idea-speak-for-itself/</guid>
-      <description>&lt;p&gt;Language is far more deeply rooted in reality than we often realize. Without language, how do we really do anything?  I believe that without language, there is no e = mc²—at least not in the ultimate sense that language gives birth to the laws of physics. But without language, how do we understand, grasp, or know it in the first place?&lt;/p&gt;&#xA;&lt;p&gt;Language is a tool of communication. Often, highly intelligent individuals with strong technical skills feel underappreciated. Those working in corporate or bureaucratic environments frequently blame their circumstances. While this is certainly a variable, I believe the roots of this experience go back to the earliest forms of human communication. It&amp;rsquo;s fundamental to biology. Our brains are designed so that their chemical signals can be understood or made sense of through language. In this way, language is an evolutionary aspect of humans.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>The Curse of Curiosity</title>
-      <link>http://localhost:1313/blogs/the-curse-of-curiosity/</link>
-      <pubDate>Tue, 09 Dec 2025 03:06:40 +0600</pubDate>
-      <guid>http://localhost:1313/blogs/the-curse-of-curiosity/</guid>
-      <description>&lt;p&gt;I have one life, and in this life, I want to do everything. My mind is incredibly voracious—it yearns for everything the universe has to offer: science, philosophy, mathematics, poetry, socializing, music, sleep, quietness, emotions, infinity. That’s why I hate the phrase “jack of all trades, master of none.”&lt;/p&gt;&#xA;&lt;p&gt;One life—that’s it. That’s why you should try to do all the things you love.&#xA;But when it comes to curiosity, if you want to achieve something great in one domain, you need deep focus. The cost of this all-encompassing curiosity is that it often hinders doing what’s essential.&lt;/p&gt;</description>
-    </item>
-  </channel>
-</rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Blogs on bugloper</title><link>https://bugloper.com/blogs/</link><description>Recent content in Blogs on bugloper</description><generator>Hugo</generator><language>en-US</language><copyright>Copyright (c) 2025 bugloper</copyright><lastBuildDate>Tue, 13 Jan 2026 00:35:30 +0600</lastBuildDate><atom:link href="https://bugloper.com/blogs/index.xml" rel="self" type="application/rss+xml"/><item><title>Smoking Kills</title><link>https://bugloper.com/blogs/smoking-kills/</link><pubDate>Tue, 13 Jan 2026 00:35:30 +0600</pubDate><guid>https://bugloper.com/blogs/smoking-kills/</guid><description>&lt;p&gt;&lt;img src="https://bugloper.com/images/blogs/smoking-kills.png" alt="Smoking Kills"&gt;&lt;/p&gt;
+&lt;p&gt;If aliens ever visited Earth and saw “Smoking Kills” on cigarette packs,
+“Wait… it kills you? Then why is it not banned, and why are you buying it
+in packs of 20?”&lt;/p&gt;</description></item><item><title>The 99th Percentile of Understanding</title><link>https://bugloper.com/blogs/99th-percentile-of-understanding/</link><pubDate>Mon, 05 Jan 2026 19:48:50 +0600</pubDate><guid>https://bugloper.com/blogs/99th-percentile-of-understanding/</guid><description>&lt;p&gt;In retrospect, I realize I never truly had a teacher who taught me mathematics beyond formulas and mechanical steps for integration and differentiation. Only now, as I begin to understand how mathematics actually describes the universe, do I see how poorly this was conveyed. Phrases like &lt;em&gt;“integrate from 0 to ∞”&lt;/em&gt; mean nothing to minds that haven’t yet grasped even basic arithmetic or algebra—especially when no one explains what differentiation and integration are meant to solve or represent in real problems.&lt;/p&gt;</description></item><item><title>Does An Idea Speak For Itself?</title><link>https://bugloper.com/blogs/does-an-idea-speak-for-itself/</link><pubDate>Tue, 09 Dec 2025 12:00:00 +0600</pubDate><guid>https://bugloper.com/blogs/does-an-idea-speak-for-itself/</guid><description>&lt;p&gt;Language is far more deeply rooted in reality than we often realize. Without language, how do we really do anything? I believe that without language, there is no e = mc²—at least not in the ultimate sense that language gives birth to the laws of physics. But without language, how do we understand, grasp, or know it in the first place?&lt;/p&gt;
+&lt;p&gt;Language is a tool of communication. Often, highly intelligent individuals with strong technical skills feel underappreciated. Those working in corporate or bureaucratic environments frequently blame their circumstances. While this is certainly a variable, I believe the roots of this experience go back to the earliest forms of human communication. It&amp;rsquo;s fundamental to biology. Our brains are designed so that their chemical signals can be understood or made sense of through language. In this way, language is an evolutionary aspect of humans.&lt;/p&gt;</description></item><item><title>The Curse of Curiosity</title><link>https://bugloper.com/blogs/the-curse-of-curiosity/</link><pubDate>Tue, 09 Dec 2025 03:06:40 +0600</pubDate><guid>https://bugloper.com/blogs/the-curse-of-curiosity/</guid><description>&lt;p&gt;I have one life, and in this life, I want to do everything. My mind is incredibly voracious—it yearns for everything the universe has to offer: science, philosophy, mathematics, poetry, socializing, music, sleep, quietness, emotions, infinity. That’s why I hate the phrase “jack of all trades, master of none.”&lt;/p&gt;
+&lt;p&gt;One life—that’s it. That’s why you should try to do all the things you love.
+But when it comes to curiosity, if you want to achieve something great in one domain, you need deep focus. The cost of this all-encompassing curiosity is that it often hinders doing what’s essential.&lt;/p&gt;</description></item></channel></rss>

@@ -1,12 +1,12 @@
 // Service Worker for PWA functionality
-const CACHE_NAME = 'bugloper-v3';
+const CACHE_NAME = 'bugloper-v6';
 const STATIC_ASSETS = [
-  '/css/main.css',
   '/js/main.js',
   '/icon.svg',
   '/apple-touch-icon.png',
   '/favicon.ico'
 ];
+// Note: CSS is NOT cached - always fetch fresh
 
 // Install event - cache static resources only
 self.addEventListener('install', (event) => {
@@ -49,10 +49,16 @@ function isHtmlRequest(request) {
           request.headers.get('accept')?.includes('text/html'));
 }
 
+// Helper function to check if request is for CSS
+function isCssRequest(request) {
+  const url = new URL(request.url);
+  return url.pathname.match(/\.css$/i);
+}
+
 // Helper function to check if request is for static asset
 function isStaticAsset(request) {
   const url = new URL(request.url);
-  return url.pathname.match(/\.(css|js|png|jpg|jpeg|gif|svg|ico|woff|woff2|ttf|eot)$/i) ||
+  return url.pathname.match(/\.(js|png|jpg|jpeg|gif|svg|ico|woff|woff2|ttf|eot)$/i) ||
          STATIC_ASSETS.some(asset => url.pathname === asset);
 }
 
@@ -84,6 +90,25 @@ self.addEventListener('fetch', (event) => {
               return caches.match('/');
             }
           });
+        })
+    );
+    return;
+  }
+
+  // Network-first for CSS files (always get fresh CSS)
+  if (isCssRequest(request)) {
+    event.respondWith(
+      fetch(request, { cache: 'no-store' })
+        .then((response) => {
+          // Don't cache CSS - always fetch fresh
+          caches.open(CACHE_NAME).then((cache) => {
+            cache.delete(request);
+          });
+          return response;
+        })
+        .catch(() => {
+          // If network fails, try cache as fallback
+          return caches.match(request);
         })
     );
     return;
