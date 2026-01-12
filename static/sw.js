@@ -1,5 +1,5 @@
 // Service Worker for PWA functionality
-const CACHE_NAME = 'bugloper-v6';
+const CACHE_NAME = 'bugloper-v7';
 const STATIC_ASSETS = [
   '/js/main.js',
   '/icon.svg',
@@ -55,10 +55,16 @@ function isCssRequest(request) {
   return url.pathname.match(/\.css$/i);
 }
 
+// Helper function to check if request is for image
+function isImageRequest(request) {
+  const url = new URL(request.url);
+  return url.pathname.match(/\.(png|jpg|jpeg|gif|webp)$/i);
+}
+
 // Helper function to check if request is for static asset
 function isStaticAsset(request) {
   const url = new URL(request.url);
-  return url.pathname.match(/\.(js|png|jpg|jpeg|gif|svg|ico|woff|woff2|ttf|eot)$/i) ||
+  return url.pathname.match(/\.(js|svg|ico|woff|woff2|ttf|eot)$/i) ||
          STATIC_ASSETS.some(asset => url.pathname === asset);
 }
 
@@ -101,6 +107,25 @@ self.addEventListener('fetch', (event) => {
       fetch(request, { cache: 'no-store' })
         .then((response) => {
           // Don't cache CSS - always fetch fresh
+          caches.open(CACHE_NAME).then((cache) => {
+            cache.delete(request);
+          });
+          return response;
+        })
+        .catch(() => {
+          // If network fails, try cache as fallback
+          return caches.match(request);
+        })
+    );
+    return;
+  }
+
+  // Network-first for images (always get fresh images)
+  if (isImageRequest(request)) {
+    event.respondWith(
+      fetch(request, { cache: 'no-store' })
+        .then((response) => {
+          // Don't cache images - always fetch fresh
           caches.open(CACHE_NAME).then((cache) => {
             cache.delete(request);
           });

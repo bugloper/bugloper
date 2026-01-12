@@ -42,7 +42,7 @@
       <link>http://localhost:1313/blogs/smoking-kills/</link>
       <pubDate>Tue, 13 Jan 2026 00:35:30 +0600</pubDate>
       <guid>http://localhost:1313/blogs/smoking-kills/</guid>
-      <description>&lt;p&gt;&lt;img src=&#34;http://localhost:1313/images/blogs/smoking-kills.png&#34; alt=&#34;Smoking Kills&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;If aliens ever visited Earth and saw “Smoking Kills” on cigarette packs, “Wait… it kills you? Then why is it not banned, and why are you buying it in packs of 20?”&lt;/p&gt;</description>
+      <description>&lt;p&gt;&lt;img src=&#34;http://localhost:1313/images/blogs/smoking-kills.png?v=2&#34; alt=&#34;Smoking Kills&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;If aliens ever visited Earth and saw &amp;ldquo;Smoking Kills&amp;rdquo; on cigarette packs,&#xA;&amp;ldquo;Wait… it kills you? Then why is it not banned, and why are you buying it&#xA;in packs of 20?&amp;rdquo;&lt;/p&gt;</description>
     </item>
     <item>
       <title>About</title>
