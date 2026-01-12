@@ -1,1 +1,25 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml"><url><loc>https://bugloper.com/blogs/smoking-kills/</loc><lastmod>2026-01-13T00:35:30+06:00</lastmod><changefreq>monthly</changefreq><priority>0.5</priority></url><url><loc>https://bugloper.com/blogs/99th-percentile-of-understanding/</loc><lastmod>2026-01-05T19:48:50+06:00</lastmod><changefreq>monthly</changefreq><priority>0.5</priority></url><url><loc>https://bugloper.com/blogs/does-an-idea-speak-for-itself/</loc><lastmod>2025-12-09T12:00:00+06:00</lastmod><changefreq>monthly</changefreq><priority>0.5</priority></url><url><loc>https://bugloper.com/blogs/the-curse-of-curiosity/</loc><lastmod>2025-12-09T03:06:40+06:00</lastmod><changefreq>monthly</changefreq><priority>0.5</priority></url></urlset>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  <url>
+    <loc>http://localhost:1313/blogs/smoking-kills/</loc>
+    <lastmod>2026-01-13T00:35:30+06:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/blogs/99th-percentile-of-understanding/</loc>
+    <lastmod>2026-01-05T19:48:50+06:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/blogs/does-an-idea-speak-for-itself/</loc>
+    <lastmod>2025-12-09T12:00:00+06:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/blogs/the-curse-of-curiosity/</loc>
+    <lastmod>2025-12-09T03:06:40+06:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+</urlset>

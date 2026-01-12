@@ -1,26 +1,83 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>bugloper</title><link>https://bugloper.com/</link><description>Recent content on bugloper</description><generator>Hugo</generator><language>en-US</language><copyright>Copyright (c) 2025 bugloper</copyright><lastBuildDate>Tue, 13 Jan 2026 00:35:30 +0600</lastBuildDate><atom:link href="https://bugloper.com/index.xml" rel="self" type="application/rss+xml"/><item><title>Example Post</title><link>https://bugloper.com/blog/example/</link><pubDate>Thu, 07 Sep 2023 16:27:22 +0200</pubDate><guid>https://bugloper.com/blog/example/</guid><description>You can use blog posts for announcing product updates and features.</description></item><item><title>Example Guide</title><link>https://bugloper.com/docs/guides/example/</link><pubDate>Thu, 07 Sep 2023 16:04:48 +0200</pubDate><guid>https://bugloper.com/docs/guides/example/</guid><description>&lt;p&gt;Guides lead a user through a specific task they want to accomplish, often with a sequence of steps. Writing a good guide requires thinking about what your users are trying to do.&lt;/p&gt;
-&lt;h2 id="further-reading"&gt;Further reading&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;Read &lt;a href="https://diataxis.fr/how-to-guides/"&gt;about how-to guides&lt;/a&gt; in the Diátaxis framework&lt;/li&gt;
-&lt;/ul&gt;</description></item><item><title>Example Reference</title><link>https://bugloper.com/docs/reference/example/</link><pubDate>Thu, 07 Sep 2023 16:13:18 +0200</pubDate><guid>https://bugloper.com/docs/reference/example/</guid><description>&lt;p&gt;Reference pages are ideal for outlining how things work in terse and clear terms. Less concerned with telling a story or addressing a specific use case, they should give a comprehensive outline of what your documenting.&lt;/p&gt;
-&lt;h2 id="further-reading"&gt;Further reading&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;Read &lt;a href="https://diataxis.fr/reference/"&gt;about reference&lt;/a&gt; in the Diátaxis framework&lt;/li&gt;
-&lt;/ul&gt;</description></item><item><title>Resources</title><link>https://bugloper.com/docs/resources/</link><pubDate>Tue, 27 Feb 2024 09:30:56 +0100</pubDate><guid>https://bugloper.com/docs/resources/</guid><description>&lt;p&gt;Link to valuable, relevant resources.&lt;/p&gt;</description></item><item><title>Smoking Kills</title><link>https://bugloper.com/blogs/smoking-kills/</link><pubDate>Tue, 13 Jan 2026 00:35:30 +0600</pubDate><guid>https://bugloper.com/blogs/smoking-kills/</guid><description>&lt;p&gt;&lt;img src="https://bugloper.com/images/blogs/smoking-kills.png" alt="Smoking Kills"&gt;&lt;/p&gt;
-&lt;p&gt;If aliens ever visited Earth and saw “Smoking Kills” on cigarette packs,
-“Wait… it kills you? Then why is it not banned, and why are you buying it
-in packs of 20?”&lt;/p&gt;</description></item><item><title>About</title><link>https://bugloper.com/about/</link><pubDate>Mon, 05 Jan 2026 20:00:00 +0600</pubDate><guid>https://bugloper.com/about/</guid><description>&lt;h2 id="who-i-am"&gt;Who I Am&lt;/h2&gt;
-&lt;p&gt;I&amp;rsquo;m a software engineer passionate about building meaningful tools and exploring the deeper questions that technology raises. I believe in the power of clear communication, both in code and in writing, and I&amp;rsquo;m constantly seeking to understand not just &lt;em&gt;how&lt;/em&gt; things work, but &lt;em&gt;why&lt;/em&gt; they matter.&lt;/p&gt;
-&lt;h2 id="what-i-do"&gt;What I Do&lt;/h2&gt;
-&lt;p&gt;I build software, write code, and occasionally share my thoughts through writing. My work spans various domains—from creating Ruby gems that solve real problems to exploring reverse engineering and system design. I&amp;rsquo;m particularly interested in:&lt;/p&gt;</description></item><item><title>Contact</title><link>https://bugloper.com/contact/</link><pubDate>Mon, 05 Jan 2026 20:00:00 +0600</pubDate><guid>https://bugloper.com/contact/</guid><description>&lt;p&gt;Get in touch with me.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Email:&lt;/strong&gt; &lt;a href="mailto:bugloper@hey.com"&gt;bugloper@hey.com&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;GitHub:&lt;/strong&gt; &lt;a href="https://github.com/bugloper"&gt;github.com/bugloper&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;LinkedIn:&lt;/strong&gt; &lt;a href="https://www.linkedin.com/in/nima-yonten-a03995227"&gt;linkedin.com/in/nima-yonten-a03995227&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Twitter/X:&lt;/strong&gt; &lt;a href="https://x.com/bugloper"&gt;x.com/bugloper&lt;/a&gt;&lt;/p&gt;</description></item><item><title>Projects</title><link>https://bugloper.com/projects/</link><pubDate>Mon, 05 Jan 2026 20:00:00 +0600</pubDate><guid>https://bugloper.com/projects/</guid><description>&lt;p&gt;Here are some of my projects and work.&lt;/p&gt;
-&lt;h3 id="healthier"&gt;&lt;a href="https://rubygems.org/search?query=healthier"&gt;healthier&lt;/a&gt;&lt;/h3&gt;
-&lt;p&gt;Healthier is a Ruby gem that exposes a standardized health-check endpoint for Rails applications, allowing you to monitor the availability and status of dependent services such as databases, caches, and external APIs.&lt;/p&gt;
-&lt;h3 id="gotenberg"&gt;&lt;a href="https://rubygems.org/gems/gotenberg"&gt;gotenberg&lt;/a&gt;&lt;/h3&gt;
-&lt;p&gt;A Ruby wrapper around &lt;a href="https://gotenberg.dev"&gt;Gotenberg&lt;/a&gt; that simplifies PDF generation and document conversion by integrating seamlessly with the Rails asset pipeline.&lt;/p&gt;
-&lt;h3 id="esrever"&gt;&lt;a href="https://github.com/bugloper/esrever"&gt;esrever&lt;/a&gt;&lt;/h3&gt;
-&lt;p&gt;A lightweight reverse proxy written in Go, inspired by nginx, designed to efficiently route and forward HTTP traffic. Built as a hobby project for learning and experimentation.&lt;/p&gt;</description></item><item><title>The 99th Percentile of Understanding</title><link>https://bugloper.com/blogs/99th-percentile-of-understanding/</link><pubDate>Mon, 05 Jan 2026 19:48:50 +0600</pubDate><guid>https://bugloper.com/blogs/99th-percentile-of-understanding/</guid><description>&lt;p&gt;In retrospect, I realize I never truly had a teacher who taught me mathematics beyond formulas and mechanical steps for integration and differentiation. Only now, as I begin to understand how mathematics actually describes the universe, do I see how poorly this was conveyed. Phrases like &lt;em&gt;“integrate from 0 to ∞”&lt;/em&gt; mean nothing to minds that haven’t yet grasped even basic arithmetic or algebra—especially when no one explains what differentiation and integration are meant to solve or represent in real problems.&lt;/p&gt;</description></item><item><title>Does An Idea Speak For Itself?</title><link>https://bugloper.com/blogs/does-an-idea-speak-for-itself/</link><pubDate>Tue, 09 Dec 2025 12:00:00 +0600</pubDate><guid>https://bugloper.com/blogs/does-an-idea-speak-for-itself/</guid><description>&lt;p&gt;Language is far more deeply rooted in reality than we often realize. Without language, how do we really do anything? I believe that without language, there is no e = mc²—at least not in the ultimate sense that language gives birth to the laws of physics. But without language, how do we understand, grasp, or know it in the first place?&lt;/p&gt;
-&lt;p&gt;Language is a tool of communication. Often, highly intelligent individuals with strong technical skills feel underappreciated. Those working in corporate or bureaucratic environments frequently blame their circumstances. While this is certainly a variable, I believe the roots of this experience go back to the earliest forms of human communication. It&amp;rsquo;s fundamental to biology. Our brains are designed so that their chemical signals can be understood or made sense of through language. In this way, language is an evolutionary aspect of humans.&lt;/p&gt;</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>bugloper</title>
+    <link>http://localhost:1313/</link>
+    <description>Recent content on bugloper</description>
+    <generator>Hugo</generator>
+    <language>en-US</language>
+    <copyright>Copyright (c) 2025 bugloper</copyright>
+    <lastBuildDate>Tue, 13 Jan 2026 00:35:30 +0600</lastBuildDate>
+    <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Example Post</title>
+      <link>http://localhost:1313/blog/example/</link>
+      <pubDate>Thu, 07 Sep 2023 16:27:22 +0200</pubDate>
+      <guid>http://localhost:1313/blog/example/</guid>
+      <description>You can use blog posts for announcing product updates and features.</description>
+    </item>
+    <item>
+      <title>Example Guide</title>
+      <link>http://localhost:1313/docs/guides/example/</link>
+      <pubDate>Thu, 07 Sep 2023 16:04:48 +0200</pubDate>
+      <guid>http://localhost:1313/docs/guides/example/</guid>
+      <description>&lt;p&gt;Guides lead a user through a specific task they want to accomplish, often with a sequence of steps. Writing a good guide requires thinking about what your users are trying to do.&lt;/p&gt;&#xA;&lt;h2 id=&#34;further-reading&#34;&gt;Further reading&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Read &lt;a href=&#34;https://diataxis.fr/how-to-guides/&#34;&gt;about how-to guides&lt;/a&gt; in the Diátaxis framework&lt;/li&gt;&#xA;&lt;/ul&gt;</description>
+    </item>
+    <item>
+      <title>Example Reference</title>
+      <link>http://localhost:1313/docs/reference/example/</link>
+      <pubDate>Thu, 07 Sep 2023 16:13:18 +0200</pubDate>
+      <guid>http://localhost:1313/docs/reference/example/</guid>
+      <description>&lt;p&gt;Reference pages are ideal for outlining how things work in terse and clear terms. Less concerned with telling a story or addressing a specific use case, they should give a comprehensive outline of what your documenting.&lt;/p&gt;&#xA;&lt;h2 id=&#34;further-reading&#34;&gt;Further reading&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Read &lt;a href=&#34;https://diataxis.fr/reference/&#34;&gt;about reference&lt;/a&gt; in the Diátaxis framework&lt;/li&gt;&#xA;&lt;/ul&gt;</description>
+    </item>
+    <item>
+      <title>Resources</title>
+      <link>http://localhost:1313/docs/resources/</link>
+      <pubDate>Tue, 27 Feb 2024 09:30:56 +0100</pubDate>
+      <guid>http://localhost:1313/docs/resources/</guid>
+      <description>&lt;p&gt;Link to valuable, relevant resources.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Smoking Kills</title>
+      <link>http://localhost:1313/blogs/smoking-kills/</link>
+      <pubDate>Tue, 13 Jan 2026 00:35:30 +0600</pubDate>
+      <guid>http://localhost:1313/blogs/smoking-kills/</guid>
+      <description>&lt;p&gt;&lt;img src=&#34;http://localhost:1313/images/blogs/smoking-kills.png&#34; alt=&#34;Smoking Kills&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;If aliens ever visited Earth and saw “Smoking Kills” on cigarette packs, “Wait… it kills you? Then why is it not banned, and why are you buying it in packs of 20?”&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>About</title>
+      <link>http://localhost:1313/about/</link>
+      <pubDate>Mon, 05 Jan 2026 20:00:00 +0600</pubDate>
+      <guid>http://localhost:1313/about/</guid>
+      <description>&lt;h2 id=&#34;who-i-am&#34;&gt;Who I Am&lt;/h2&gt;&#xA;&lt;p&gt;I&amp;rsquo;m a software engineer passionate about building meaningful tools and exploring the deeper questions that technology raises. I believe in the power of clear communication, both in code and in writing, and I&amp;rsquo;m constantly seeking to understand not just &lt;em&gt;how&lt;/em&gt; things work, but &lt;em&gt;why&lt;/em&gt; they matter.&lt;/p&gt;&#xA;&lt;h2 id=&#34;what-i-do&#34;&gt;What I Do&lt;/h2&gt;&#xA;&lt;p&gt;I build software, write code, and occasionally share my thoughts through writing. My work spans various domains—from creating Ruby gems that solve real problems to exploring reverse engineering and system design. I&amp;rsquo;m particularly interested in:&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Contact</title>
+      <link>http://localhost:1313/contact/</link>
+      <pubDate>Mon, 05 Jan 2026 20:00:00 +0600</pubDate>
+      <guid>http://localhost:1313/contact/</guid>
+      <description>&lt;p&gt;Get in touch with me.&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;Email:&lt;/strong&gt; &lt;a href=&#34;mailto:bugloper@hey.com&#34;&gt;bugloper@hey.com&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;GitHub:&lt;/strong&gt; &lt;a href=&#34;https://github.com/bugloper&#34;&gt;github.com/bugloper&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;LinkedIn:&lt;/strong&gt; &lt;a href=&#34;https://www.linkedin.com/in/nima-yonten-a03995227&#34;&gt;linkedin.com/in/nima-yonten-a03995227&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;Twitter/X:&lt;/strong&gt; &lt;a href=&#34;https://x.com/bugloper&#34;&gt;x.com/bugloper&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Projects</title>
+      <link>http://localhost:1313/projects/</link>
+      <pubDate>Mon, 05 Jan 2026 20:00:00 +0600</pubDate>
+      <guid>http://localhost:1313/projects/</guid>
+      <description>&lt;p&gt;Here are some of my projects and work.&lt;/p&gt;&#xA;&lt;h3 id=&#34;healthier&#34;&gt;&lt;a href=&#34;https://rubygems.org/search?query=healthier&#34;&gt;healthier&lt;/a&gt;&lt;/h3&gt;&#xA;&lt;p&gt;Healthier is a Ruby gem that exposes a standardized health-check endpoint for Rails applications, allowing you to monitor the availability and status of dependent services such as databases, caches, and external APIs.&lt;/p&gt;&#xA;&lt;h3 id=&#34;gotenberg&#34;&gt;&lt;a href=&#34;https://rubygems.org/gems/gotenberg&#34;&gt;gotenberg&lt;/a&gt;&lt;/h3&gt;&#xA;&lt;p&gt;A Ruby wrapper around &lt;a href=&#34;https://gotenberg.dev&#34;&gt;Gotenberg&lt;/a&gt; that simplifies PDF generation and document conversion by integrating seamlessly with the Rails asset pipeline.&lt;/p&gt;&#xA;&lt;h3 id=&#34;esrever&#34;&gt;&lt;a href=&#34;https://github.com/bugloper/esrever&#34;&gt;esrever&lt;/a&gt;&lt;/h3&gt;&#xA;&lt;p&gt;A lightweight reverse proxy written in Go, inspired by nginx, designed to efficiently route and forward HTTP traffic. Built as a hobby project for learning and experimentation.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>The 99th Percentile of Understanding</title>
+      <link>http://localhost:1313/blogs/99th-percentile-of-understanding/</link>
+      <pubDate>Mon, 05 Jan 2026 19:48:50 +0600</pubDate>
+      <guid>http://localhost:1313/blogs/99th-percentile-of-understanding/</guid>
+      <description>&lt;p&gt;In retrospect, I realize I never truly had a teacher who taught me mathematics beyond formulas and mechanical steps for integration and differentiation. Only now, as I begin to understand how mathematics actually describes the universe, do I see how poorly this was conveyed. Phrases like &lt;em&gt;“integrate from 0 to ∞”&lt;/em&gt; mean nothing to minds that haven’t yet grasped even basic arithmetic or algebra—especially when no one explains what differentiation and integration are meant to solve or represent in real problems.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Does An Idea Speak For Itself?</title>
+      <link>http://localhost:1313/blogs/does-an-idea-speak-for-itself/</link>
+      <pubDate>Tue, 09 Dec 2025 12:00:00 +0600</pubDate>
+      <guid>http://localhost:1313/blogs/does-an-idea-speak-for-itself/</guid>
+      <description>&lt;p&gt;Language is far more deeply rooted in reality than we often realize. Without language, how do we really do anything?  I believe that without language, there is no e = mc²—at least not in the ultimate sense that language gives birth to the laws of physics. But without language, how do we understand, grasp, or know it in the first place?&lt;/p&gt;&#xA;&lt;p&gt;Language is a tool of communication. Often, highly intelligent individuals with strong technical skills feel underappreciated. Those working in corporate or bureaucratic environments frequently blame their circumstances. While this is certainly a variable, I believe the roots of this experience go back to the earliest forms of human communication. It&amp;rsquo;s fundamental to biology. Our brains are designed so that their chemical signals can be understood or made sense of through language. In this way, language is an evolutionary aspect of humans.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

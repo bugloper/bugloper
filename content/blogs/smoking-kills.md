@@ -7,6 +7,4 @@ image = '/images/blogs/smoking-kills.png'
 
 ![Smoking Kills](/images/blogs/smoking-kills.png)
 
-If aliens ever visited Earth and saw “Smoking Kills” on cigarette packs,
-“Wait… it kills you? Then why is it not banned, and why are you buying it 
-in packs of 20?”
+If aliens ever visited Earth and saw “Smoking Kills” on cigarette packs, “Wait… it kills you? Then why is it not banned, and why are you buying it in packs of 20?”
