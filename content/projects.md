@@ -1,10 +1,8 @@
 ---
 title: "Projects"
 description: "My projects and work"
-date: 2026-01-05T20:00:00+06:00
-lastmod: 2026-01-05T20:00:00+06:00
-draft: false
-type: "page"
+menu: "main"
+weight: 4
 ---
 
 Here are some of my projects and work.

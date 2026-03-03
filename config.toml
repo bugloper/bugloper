@@ -1,4 +1,34 @@
 baseURL = 'https://bugloper.com/'
 languageCode = 'en-us'
 title = 'bugloper'
-theme = 'doks'
+theme = 'hugo-bearcub'
+copyright = 'bugloper'
+defaultContentLanguage = 'en'
+
+# Generate a nice robots.txt for SEO
+enableRobotsTXT = true
+
+# Syntax highlighting (Bear Cub recommended)
+[markup]
+  [markup.highlight]
+    lineNos = true
+    lineNumbersInTable = false
+    noClasses = false
+
+[languages.en]
+  title = "bugloper"
+  languageName = "en-US"
+  contentDir = "content"
+
+[params]
+  description = "I am bugloper—an engineer, a writer, a thinker, and a seeker."
+  dateFormat = "2006-01-02"
+  themeStyle = "herman"
+  generateSocialCard = true
+
+  [params.social]
+    twitter = "bugloper"
+
+  [params.author]
+    name = "bugloper"
+    email = "bugloper@hey.com"

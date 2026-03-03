@@ -1,10 +1,8 @@
 ---
 title: "About"
 description: "About bugloper"
-date: 2026-01-05T20:00:00+06:00
-lastmod: 2026-01-05T20:00:00+06:00
-draft: false
-type: "page"
+menu: "main"
+weight: 3
 ---
 
 ## Who I Am

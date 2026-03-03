@@ -1,5 +1,4 @@
-
-gitbaseURL = 'https://bugloper.com/'
+baseURL = 'https://bugloper.com/'
 languageCode = 'en-us'
 title = 'bugloper'
-theme = 'doks'
+theme = 'hugo-bearcub'

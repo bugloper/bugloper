@@ -1,12 +1,11 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title>Blogs on bugloper</title>
+    <title>Blog on bugloper</title>
     <link>http://localhost:1313/blogs/</link>
-    <description>Recent content in Blogs on bugloper</description>
-    <generator>Hugo</generator>
-    <language>en-US</language>
-    <copyright>Copyright (c) 2025 bugloper</copyright>
+    <description>Recent content in Blog on bugloper</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
     <lastBuildDate>Tue, 13 Jan 2026 00:35:30 +0600</lastBuildDate>
     <atom:link href="http://localhost:1313/blogs/index.xml" rel="self" type="application/rss+xml" />
     <item>
@@ -15,6 +14,11 @@
       <pubDate>Tue, 13 Jan 2026 00:35:30 +0600</pubDate>
       <guid>http://localhost:1313/blogs/smoking-kills/</guid>
       <description>&lt;p&gt;&lt;img src=&#34;http://localhost:1313/images/blogs/smoking-kills.png?v=2&#34; alt=&#34;Smoking Kills&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;If aliens ever visited Earth and saw &amp;ldquo;Smoking Kills&amp;rdquo; on cigarette packs,&#xA;&amp;ldquo;Wait… it kills you? Then why is it not banned, and why are you buying it&#xA;in packs of 20?&amp;rdquo;&lt;/p&gt;</description>
+      <content:encoded><![CDATA[<p><img src="/images/blogs/smoking-kills.png?v=2" alt="Smoking Kills"></p>
+<p>If aliens ever visited Earth and saw &ldquo;Smoking Kills&rdquo; on cigarette packs,
+&ldquo;Wait… it kills you? Then why is it not banned, and why are you buying it
+in packs of 20?&rdquo;</p>
+]]></content:encoded>
     </item>
     <item>
       <title>The 99th Percentile of Understanding</title>
@@ -22,6 +26,11 @@
       <pubDate>Mon, 05 Jan 2026 19:48:50 +0600</pubDate>
       <guid>http://localhost:1313/blogs/99th-percentile-of-understanding/</guid>
       <description>&lt;p&gt;In retrospect, I realize I never truly had a teacher who taught me mathematics beyond formulas and mechanical steps for integration and differentiation. Only now, as I begin to understand how mathematics actually describes the universe, do I see how poorly this was conveyed. Phrases like &lt;em&gt;“integrate from 0 to ∞”&lt;/em&gt; mean nothing to minds that haven’t yet grasped even basic arithmetic or algebra—especially when no one explains what differentiation and integration are meant to solve or represent in real problems.&lt;/p&gt;</description>
+      <content:encoded><![CDATA[<p>In retrospect, I realize I never truly had a teacher who taught me mathematics beyond formulas and mechanical steps for integration and differentiation. Only now, as I begin to understand how mathematics actually describes the universe, do I see how poorly this was conveyed. Phrases like <em>“integrate from 0 to ∞”</em> mean nothing to minds that haven’t yet grasped even basic arithmetic or algebra—especially when no one explains what differentiation and integration are meant to solve or represent in real problems.</p>
+<p>And yet, teachers often blame students for not paying attention in class. But it’s not really the students’ fault when the teachers themselves never fully understood what they were teaching. <a href="https://youtu.be/WUvTyaaNkzM?si=6fhjQZA8Vel0C0VP">This video</a>
+, The Essence of Calculus, explains the fundamentals of calculus so simply and clearly that it exposes how much of what we call “understanding” is really just memorized steps and formulas, devoid of any conceptual grounding.</p>
+<p>You can score good marks in exams without ever understanding the true meaning of calculus. Perhaps that’s a practical way to commercialize education—but it comes nowhere close to real understanding.</p>
+]]></content:encoded>
     </item>
     <item>
       <title>Does An Idea Speak For Itself?</title>
@@ -29,6 +38,12 @@
       <pubDate>Tue, 09 Dec 2025 12:00:00 +0600</pubDate>
       <guid>http://localhost:1313/blogs/does-an-idea-speak-for-itself/</guid>
       <description>&lt;p&gt;Language is far more deeply rooted in reality than we often realize. Without language, how do we really do anything?  I believe that without language, there is no e = mc²—at least not in the ultimate sense that language gives birth to the laws of physics. But without language, how do we understand, grasp, or know it in the first place?&lt;/p&gt;&#xA;&lt;p&gt;Language is a tool of communication. Often, highly intelligent individuals with strong technical skills feel underappreciated. Those working in corporate or bureaucratic environments frequently blame their circumstances. While this is certainly a variable, I believe the roots of this experience go back to the earliest forms of human communication. It&amp;rsquo;s fundamental to biology. Our brains are designed so that their chemical signals can be understood or made sense of through language. In this way, language is an evolutionary aspect of humans.&lt;/p&gt;</description>
+      <content:encoded><![CDATA[<p>Language is far more deeply rooted in reality than we often realize. Without language, how do we really do anything?  I believe that without language, there is no e = mc²—at least not in the ultimate sense that language gives birth to the laws of physics. But without language, how do we understand, grasp, or know it in the first place?</p>
+<p>Language is a tool of communication. Often, highly intelligent individuals with strong technical skills feel underappreciated. Those working in corporate or bureaucratic environments frequently blame their circumstances. While this is certainly a variable, I believe the roots of this experience go back to the earliest forms of human communication. It&rsquo;s fundamental to biology. Our brains are designed so that their chemical signals can be understood or made sense of through language. In this way, language is an evolutionary aspect of humans.</p>
+<p>If someone tries to convey a unique idea with poor communication, it often leads to confusion. The lack of clarity forces the brain to make sense of it using all the knowledge it has previously acquired, and connecting the dots is highly contextual to each person’s mind—although the mechanics of how human brains connect dots are generally similar. Perhaps if certain aspects of the idea have already been communicated and understood, even a poorly articulated message might not be an issue, as the brain already has the most number of variables to grasp the concept.</p>
+<p>The definition of things also plays a vital role. Even with articulate communication, if the speaker and the listener have fundamentally different understandings of the subject matter—what a particular word means in that context—it is no less confusing than poor communication.</p>
+<p>So, does an idea speak for itself?</p>
+]]></content:encoded>
     </item>
     <item>
       <title>The Curse of Curiosity</title>
@@ -36,6 +51,11 @@
       <pubDate>Tue, 09 Dec 2025 03:06:40 +0600</pubDate>
       <guid>http://localhost:1313/blogs/the-curse-of-curiosity/</guid>
       <description>&lt;p&gt;I have one life, and in this life, I want to do everything. My mind is incredibly voracious—it yearns for everything the universe has to offer: science, philosophy, mathematics, poetry, socializing, music, sleep, quietness, emotions, infinity. That’s why I hate the phrase “jack of all trades, master of none.”&lt;/p&gt;&#xA;&lt;p&gt;One life—that’s it. That’s why you should try to do all the things you love.&#xA;But when it comes to curiosity, if you want to achieve something great in one domain, you need deep focus. The cost of this all-encompassing curiosity is that it often hinders doing what’s essential.&lt;/p&gt;</description>
+      <content:encoded><![CDATA[<p>I have one life, and in this life, I want to do everything. My mind is incredibly voracious—it yearns for everything the universe has to offer: science, philosophy, mathematics, poetry, socializing, music, sleep, quietness, emotions, infinity. That’s why I hate the phrase “jack of all trades, master of none.”</p>
+<p>One life—that’s it. That’s why you should try to do all the things you love.
+But when it comes to curiosity, if you want to achieve something great in one domain, you need deep focus. The cost of this all-encompassing curiosity is that it often hinders doing what’s essential.</p>
+<p>I call this The Curse of Curiosity.</p>
+]]></content:encoded>
     </item>
   </channel>
 </rss>

@@ -1,5 +1,0 @@
-{
-  "buildCommand": "hugo --gc --minify --config config.toml",
-  "outputDirectory": "public",
-  "framework": null
-}
