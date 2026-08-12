@@ -90,10 +90,10 @@ document.addEventListener('DOMContentLoaded', function() {
     function showMessage(text, type) {
         if (subscribeMessage) {
             subscribeMessage.textContent = text;
-            subscribeMessage.className = 'subscribe-message ' + type;
+            subscribeMessage.className = 'subscribe__msg' + (type === 'error' ? ' is-error' : '');
             setTimeout(function() {
                 subscribeMessage.textContent = '';
-                subscribeMessage.className = 'subscribe-message';
+                subscribeMessage.className = 'subscribe__msg';
             }, 5000);
         }
     }

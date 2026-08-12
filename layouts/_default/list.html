@@ -1,0 +1,46 @@
+{{ define "main" }}
+<section class="win">
+  <div class="win__bar">DIR C:\{{ .Title | upper }}</div>
+  <div class="win__body">
+    <h1 class="post__title">{{ if eq .Kind "term" }}{{ .Data.Singular | upper }}: {{ end }}{{ .Title }}</h1>
+    <p class="post__meta">
+      VOLUME IN DRIVE C IS BUGLOPER &middot; {{ len .Pages }} FILE(S) FOUND
+    </p>
+
+    {{ with .Content }}<div class="post__body">{{ . }}</div>{{ end }}
+
+    <ul class="dir">
+      {{ range .Pages.ByDate.Reverse }}
+      <li>
+        <h2 class="dir__name">
+          {{ if .Params.link }}
+          <a href="{{ .Params.link }}" target="_blank" rel="noopener">{{ .Title }} &#8599;</a>
+          {{ else }}
+          <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+          {{ end }}
+        </h2>
+        <p class="dir__meta">
+          <time datetime='{{ .Date.Format "2006-01-02" }}'>{{ .Date.Format "2006-01-02" }}</time>
+          {{- with .ReadingTime }} &middot; {{ . }} MIN{{ end }}
+        </p>
+      </li>
+      {{ else }}
+      <li><p class="dir__desc">{{ i18n "no-posts" | upper }} &mdash; DIRECTORY EMPTY.</p></li>
+      {{ end }}
+    </ul>
+
+    {{ if and (not .Data.Singular) .Site.Taxonomies.tags }}
+    <div class="post__nav">
+      <span class="field">&gt; TAGS</span>
+      {{ range .Site.Taxonomies.tags }}
+      <a class="tag" href="{{ .Page.RelPermalink }}">#{{ lower .Page.Title }}</a>
+      {{ end }}
+    </div>
+    {{ end }}
+
+    <div class="post__nav">
+      <a href="/">&lt;&lt; BACK TO MAIN MENU</a>
+    </div>
+  </div>
+</section>
+{{ end }}

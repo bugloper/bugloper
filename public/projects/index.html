@@ -47,22 +47,34 @@
 
   
 
-  <link rel="stylesheet" href="http://localhost:1313/css/main.css">
+  <link rel="preload" href="/fonts/vt323-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="/css/main.css">
+<meta name="theme-color" content="#000070">
 </head>
 
 <body>
   <header><a class="skip-link" href="#main-content">Skip to main content</a>
+
+<div class="menubar">
+  <a class="menubar__logo" href="/">&#9632; BUGLOPER.SYS</a>
+  <a href="/blogs/"><span class="hotkey">B</span>log</a>
+  <a href="/about/"><span class="hotkey">A</span>bout</a>
+  <a href="/projects/"><span class="hotkey">P</span>rojects</a>
+  <a href="/contact/"><span class="hotkey">C</span>ontact</a>
+  <span class="menubar__clock" id="dos-clock">--:-- --</span>
+</div>
 </header>
   <main id="main-content">
-<div class="blog-container">
-    <div class="blog-wrapper">
-        <article class="blog-post">
-            <header class="blog-post-header">
-                <h1 class="blog-post-title">Projects</h1>
-            </header>
-            
-            <div class="blog-post-content">
-                <p>Here are some of my projects and work.</p>
+
+<article class="win">
+  <div class="win__bar">PROJECTS.DOC</div>
+  <div class="win__body">
+    <h1 class="post__title">Projects</h1>
+
+    
+
+    <div class="post__body">
+      <p>Here are some of my projects and work.</p>
 <h3 id="healthier"><a href="https://rubygems.org/search?query=healthier">healthier</a></h3>
 <p>Healthier is a Ruby gem that exposes a standardized health-check endpoint for Rails applications, allowing you to monitor the availability and status of dependent services such as databases, caches, and external APIs.</p>
 <h3 id="gotenberg"><a href="https://rubygems.org/gems/gotenberg">gotenberg</a></h3>
@@ -74,21 +86,46 @@
 <h3 id="otoindiff"><a href="https://github.com/bugloper/otoindiff">otoindiff</a></h3>
 <p>A small Ruby utility that eliminates the need for <code>HashWithIndifferentAccess</code> by enabling consistent key access without additional overhead.</p>
 
-            </div>
-            
-            <footer class="blog-post-footer">
-                <a href="/" class="back-link">← Back to Home</a>
-            </footer>
-        </article>
     </div>
-</div>
-
-  </main>
-  <footer><small>
-   | 
-</small></footer>
 
     
+
+    <div class="post__nav">
+      
+      <a href="/">&lt;&lt; BACK TO MAIN MENU</a>
+      
+    </div>
+  </div>
+</article>
+
+  </main>
+  <footer><div class="statusbar">
+  <a href="/about/"><span class="fkey">F1</span>ABOUT</a>
+  <a href="/blogs/"><span class="fkey">F2</span>BLOGS</a>
+  <a href="/projects/"><span class="fkey">F3</span>PROJECTS</a>
+  <a href="/contact/"><span class="fkey">F4</span>CONTACT</a>
+  <span class="statusbar__mem">(C) 2026  &middot; 655360 BYTES FREE</span>
+</div>
+</footer>
+
+  <script src="/js/main.js" defer></script>
+<script>
+  
+  (function () {
+    var el = document.getElementById('dos-clock');
+    if (!el) return;
+    function tick() {
+      var d = new Date();
+      var h = d.getHours();
+      var m = d.getMinutes();
+      var ap = h < 12 ? 'am' : 'pm';
+      h = h % 12 || 12;
+      el.textContent = (h < 10 ? ' ' : '') + h + ':' + (m < 10 ? '0' : '') + m + ap;
+    }
+    tick();
+    setInterval(tick, 20000);
+  })();
+</script>
 </body>
 
 </html>

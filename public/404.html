@@ -5,7 +5,7 @@
   <meta http-equiv="X-Clacks-Overhead" content="GNU Terry Pratchett" />
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>404</title>
+<title>404 | bugloper</title>
 <meta name="title" content="404 Page not found" />
 <meta name="description" content="" />
 <meta name="author" content="" />
@@ -43,22 +43,67 @@
 
   
 
-  <link rel="stylesheet" href="http://localhost:1313/css/main.css">
+  <link rel="preload" href="/fonts/vt323-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="/css/main.css">
+<meta name="theme-color" content="#000070">
 </head>
 
 <body>
   <header><a class="skip-link" href="#main-content">Skip to main content</a>
+
+<div class="menubar">
+  <a class="menubar__logo" href="/">&#9632; BUGLOPER.SYS</a>
+  <a href="/blogs/"><span class="hotkey">B</span>log</a>
+  <a href="/about/"><span class="hotkey">A</span>bout</a>
+  <a href="/projects/"><span class="hotkey">P</span>rojects</a>
+  <a href="/contact/"><span class="hotkey">C</span>ontact</a>
+  <span class="menubar__clock" id="dos-clock">--:-- --</span>
+</div>
 </header>
   <main id="main-content">
-<h1>404</h1>
-<h2>ʕノ•ᴥ•ʔノ ︵ ┻━┻</h2>
+<section class="win win--error">
+  <div class="win__bar">ERROR</div>
+  <div class="win__body">
+    <div class="boot__screen">
+      <p class="boot__line">C:\&gt; TYPE /404.html</p>
+      <p class="boot__line boot__err">File not found</p>
+      <p class="boot__line">&nbsp;</p>
+      <p class="boot__line">Abort, Retry, Fail?<span class="cursor" aria-hidden="true"></span></p>
+    </div>
+    <div class="post__nav">
+      <a href="/">&lt;&lt; ABORT — RETURN TO MAIN MENU</a>
+    </div>
+  </div>
+</section>
 
   </main>
-  <footer><small>
-   | 
-</small></footer>
+  <footer><div class="statusbar">
+  <a href="/about/"><span class="fkey">F1</span>ABOUT</a>
+  <a href="/blogs/"><span class="fkey">F2</span>BLOGS</a>
+  <a href="/projects/"><span class="fkey">F3</span>PROJECTS</a>
+  <a href="/contact/"><span class="fkey">F4</span>CONTACT</a>
+  <span class="statusbar__mem">(C) 2026  &middot; 655360 BYTES FREE</span>
+</div>
+</footer>
 
-    
+  <script src="/js/main.js" defer></script>
+<script>
+  
+  (function () {
+    var el = document.getElementById('dos-clock');
+    if (!el) return;
+    function tick() {
+      var d = new Date();
+      var h = d.getHours();
+      var m = d.getMinutes();
+      var ap = h < 12 ? 'am' : 'pm';
+      h = h % 12 || 12;
+      el.textContent = (h < 10 ? ' ' : '') + h + ':' + (m < 10 ? '0' : '') + m + ap;
+    }
+    tick();
+    setInterval(tick, 20000);
+  })();
+</script>
 </body>
 
 </html>

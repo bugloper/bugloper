@@ -1,0 +1,18 @@
+<script src="{{ "js/main.js" | relURL }}" defer></script>
+<script>
+  // DOS menu-bar clock
+  (function () {
+    var el = document.getElementById('dos-clock');
+    if (!el) return;
+    function tick() {
+      var d = new Date();
+      var h = d.getHours();
+      var m = d.getMinutes();
+      var ap = h < 12 ? 'am' : 'pm';
+      h = h % 12 || 12;
+      el.textContent = (h < 10 ? ' ' : '') + h + ':' + (m < 10 ? '0' : '') + m + ap;
+    }
+    tick();
+    setInterval(tick, 20000);
+  })();
+</script>

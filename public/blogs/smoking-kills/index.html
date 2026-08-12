@@ -55,41 +55,105 @@ in packs of 20?&rdquo;" />
 
   
 
-  <link rel="stylesheet" href="http://localhost:1313/css/main.css">
+  <link rel="preload" href="/fonts/vt323-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="/css/main.css">
+<meta name="theme-color" content="#000070">
 </head>
 
 <body>
   <header><a class="skip-link" href="#main-content">Skip to main content</a>
+
+<div class="menubar">
+  <a class="menubar__logo" href="/">&#9632; BUGLOPER.SYS</a>
+  <a href="/blogs/"><span class="hotkey">B</span>log</a>
+  <a href="/about/"><span class="hotkey">A</span>bout</a>
+  <a href="/projects/"><span class="hotkey">P</span>rojects</a>
+  <a href="/contact/"><span class="hotkey">C</span>ontact</a>
+  <span class="menubar__clock" id="dos-clock">--:-- --</span>
+</div>
 </header>
   <main id="main-content">
-<div class="blog-container">
-    <div class="blog-wrapper">
-        <article class="blog-post">
-            <header class="blog-post-header">
-                <h1 class="blog-post-title">Smoking Kills</h1>
-            </header>
-            
-            <div class="blog-post-content">
-                <p><img src="/images/blogs/smoking-kills.png?v=2" alt="Smoking Kills"></p>
+
+<article class="win">
+  <div class="win__bar">SMOKING-KILLS.TXT</div>
+  <div class="win__body">
+    <h1 class="post__title">Smoking Kills</h1>
+
+    
+    <p class="post__meta">
+      DATE: 2026-01-13 &middot; RUNTIME: 1 MIN &middot; 32 WORDS
+    </p>
+    
+
+    <div class="post__body">
+      <p><img src="/images/blogs/smoking-kills.png?v=2" alt="Smoking Kills"></p>
 <p>If aliens ever visited Earth and saw &ldquo;Smoking Kills&rdquo; on cigarette packs,
 &ldquo;Wait… it kills you? Then why is it not banned, and why are you buying it
 in packs of 20?&rdquo;</p>
 
-            </div>
-            
-            <footer class="blog-post-footer">
-                <a href="/" class="back-link">← Back to Home</a>
-            </footer>
-        </article>
     </div>
-</div>
-
-  </main>
-  <footer><small>
-   | 
-</small></footer>
 
     
+    <section class="subscribe">
+      <h3>&gt; SUBSCRIBE.EXE</h3>
+      <p class="subscribe__hint">LEAVE YOUR ADDRESS ON THE BOARD. NEW POSTS GET MAILED OUT.</p>
+      <form class="subscribe__form" action="https://api.web3forms.com/submit" method="POST" id="blog-subscribe-form">
+        <input type="hidden" name="access_key" value="2bb4a9c6-b5e1-41c1-92f4-1ea5ef778d12">
+        <input type="hidden" name="subject" value="New Blog Subscription">
+        <input type="checkbox" name="botcheck" style="display: none;" tabindex="-1" autocomplete="off">
+        <div class="subscribe__row">
+          <input
+            type="email"
+            name="email"
+            id="subscribe-email"
+            class="subscribe__input"
+            placeholder="USER@HOST"
+            required
+            aria-label="Email address"
+          >
+          <button type="submit" class="subscribe__btn" id="subscribe-button">[ ENTER ]</button>
+        </div>
+      </form>
+      <p class="subscribe__msg" id="subscribe-message"></p>
+    </section>
+    
+
+    <div class="post__nav">
+      
+      <a href="/blogs/">&lt;&lt; BACK TO DIRECTORY</a>
+      
+    </div>
+  </div>
+</article>
+
+  </main>
+  <footer><div class="statusbar">
+  <a href="/about/"><span class="fkey">F1</span>ABOUT</a>
+  <a href="/blogs/"><span class="fkey">F2</span>BLOGS</a>
+  <a href="/projects/"><span class="fkey">F3</span>PROJECTS</a>
+  <a href="/contact/"><span class="fkey">F4</span>CONTACT</a>
+  <span class="statusbar__mem">(C) 2026  &middot; 655360 BYTES FREE</span>
+</div>
+</footer>
+
+  <script src="/js/main.js" defer></script>
+<script>
+  
+  (function () {
+    var el = document.getElementById('dos-clock');
+    if (!el) return;
+    function tick() {
+      var d = new Date();
+      var h = d.getHours();
+      var m = d.getMinutes();
+      var ap = h < 12 ? 'am' : 'pm';
+      h = h % 12 || 12;
+      el.textContent = (h < 10 ? ' ' : '') + h + ':' + (m < 10 ? '0' : '') + m + ap;
+    }
+    tick();
+    setInterval(tick, 20000);
+  })();
+</script>
 </body>
 
 </html>

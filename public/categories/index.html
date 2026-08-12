@@ -44,55 +44,76 @@
   
 
   <link rel="alternate" type="application/rss+xml" href="http://localhost:1313/categories/index.xml" title="bugloper" />
-  <link rel="stylesheet" href="http://localhost:1313/css/main.css">
+  <link rel="preload" href="/fonts/vt323-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="/css/main.css">
+<meta name="theme-color" content="#000070">
 </head>
 
 <body>
   <header><a class="skip-link" href="#main-content">Skip to main content</a>
 
-<a href="/" class="title"><h1>bugloper</h1></a>
-<nav>
-  <a href="/">bugloper</a>
-
-  <a href="/blogs/">Blog</a>
-
-  <a href="/about/">About</a>
-
-  <a href="/projects/">Projects</a>
-
-  <a href="/contact/">Contact</a>
-
-<a href='http://localhost:1313/index.xml'>RSS</a>
-
-
-
-
-
-
-
-</nav>
+<div class="menubar">
+  <a class="menubar__logo" href="/">&#9632; BUGLOPER.SYS</a>
+  <a href="/blogs/"><span class="hotkey">B</span>log</a>
+  <a href="/about/"><span class="hotkey">A</span>bout</a>
+  <a href="/projects/"><span class="hotkey">P</span>rojects</a>
+  <a href="/contact/"><span class="hotkey">C</span>ontact</a>
+  <span class="menubar__clock" id="dos-clock">--:-- --</span>
+</div>
 </header>
   <main id="main-content">
-<content>
-  
-    <h3 class="blog-filter">Filtering for "Categories"</h3>
-  
-  <ul class="blog-posts">
+<section class="win">
+  <div class="win__bar">DIR C:\CATEGORIES</div>
+  <div class="win__body">
+    <h1 class="post__title">Categories</h1>
+    <p class="post__meta">
+      VOLUME IN DRIVE C IS BUGLOPER &middot; 0 FILE(S) FOUND
+    </p>
+
     
-    <li>
-      No posts yet
-    </li>
+
+    <ul class="dir">
+      
+      <li><p class="dir__desc">NO POSTS YET &mdash; DIRECTORY EMPTY.</p></li>
+      
+    </ul>
+
     
-  </ul>
-  
-</content>
+
+    <div class="post__nav">
+      <a href="/">&lt;&lt; BACK TO MAIN MENU</a>
+    </div>
+  </div>
+</section>
 
   </main>
-  <footer><small>
-   | 
-</small></footer>
+  <footer><div class="statusbar">
+  <a href="/about/"><span class="fkey">F1</span>ABOUT</a>
+  <a href="/blogs/"><span class="fkey">F2</span>BLOGS</a>
+  <a href="/projects/"><span class="fkey">F3</span>PROJECTS</a>
+  <a href="/contact/"><span class="fkey">F4</span>CONTACT</a>
+  <span class="statusbar__mem">(C) 2026  &middot; 655360 BYTES FREE</span>
+</div>
+</footer>
 
-    
+  <script src="/js/main.js" defer></script>
+<script>
+  
+  (function () {
+    var el = document.getElementById('dos-clock');
+    if (!el) return;
+    function tick() {
+      var d = new Date();
+      var h = d.getHours();
+      var m = d.getMinutes();
+      var ap = h < 12 ? 'am' : 'pm';
+      h = h % 12 || 12;
+      el.textContent = (h < 10 ? ' ' : '') + h + ':' + (m < 10 ? '0' : '') + m + ap;
+    }
+    tick();
+    setInterval(tick, 20000);
+  })();
+</script>
 </body>
 
 </html>

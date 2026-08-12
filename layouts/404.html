@@ -1,0 +1,18 @@
+{{ define "title" }}404 | {{ .Site.Title }}{{ end }}
+
+{{ define "main" }}
+<section class="win win--error">
+  <div class="win__bar">ERROR</div>
+  <div class="win__body">
+    <div class="boot__screen">
+      <p class="boot__line">C:\&gt; TYPE {{ with .Page }}{{ .RelPermalink }}{{ end }}</p>
+      <p class="boot__line boot__err">File not found</p>
+      <p class="boot__line">&nbsp;</p>
+      <p class="boot__line">Abort, Retry, Fail?<span class="cursor" aria-hidden="true"></span></p>
+    </div>
+    <div class="post__nav">
+      <a href="/">&lt;&lt; ABORT — RETURN TO MAIN MENU</a>
+    </div>
+  </div>
+</section>
+{{ end }}

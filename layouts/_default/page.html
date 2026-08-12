@@ -1,19 +1,60 @@
 {{ define "main" }}
-<div class="blog-container">
-    <div class="blog-wrapper">
-        <article class="blog-post">
-            <header class="blog-post-header">
-                <h1 class="blog-post-title">{{ .Title }}</h1>
-            </header>
-            
-            <div class="blog-post-content">
-                {{ .Content }}
-            </div>
-            
-            <footer class="blog-post-footer">
-                <a href="/" class="back-link">← Back to Home</a>
-            </footer>
-        </article>
+{{ $isPost := and (eq .Section "blogs") (not .IsHome) }}
+<article class="win">
+  <div class="win__bar">
+    {{- if $isPost -}}
+      {{ with .File }}{{ .BaseFileName | upper | truncate 20 "" }}{{ else }}DOCUMENT{{ end }}.TXT
+    {{- else -}}
+      {{ .Title | upper }}.DOC
+    {{- end -}}
+  </div>
+  <div class="win__body">
+    <h1 class="post__title">{{ .Title }}</h1>
+
+    {{ if $isPost }}
+    <p class="post__meta">
+      DATE: {{ .Date.Format "2006-01-02" }}
+      {{- with .ReadingTime }} &middot; RUNTIME: {{ . }} MIN{{ end }}
+      {{- with .WordCount }} &middot; {{ . }} WORDS{{ end }}
+    </p>
+    {{ end }}
+
+    <div class="post__body">
+      {{ .Content }}
     </div>
-</div>
+
+    {{ if $isPost }}
+    <section class="subscribe">
+      <h3>&gt; SUBSCRIBE.EXE</h3>
+      <p class="subscribe__hint">LEAVE YOUR ADDRESS ON THE BOARD. NEW POSTS GET MAILED OUT.</p>
+      <form class="subscribe__form" action="https://api.web3forms.com/submit" method="POST" id="blog-subscribe-form">
+        <input type="hidden" name="access_key" value="2bb4a9c6-b5e1-41c1-92f4-1ea5ef778d12">
+        <input type="hidden" name="subject" value="New Blog Subscription">
+        <input type="checkbox" name="botcheck" style="display: none;" tabindex="-1" autocomplete="off">
+        <div class="subscribe__row">
+          <input
+            type="email"
+            name="email"
+            id="subscribe-email"
+            class="subscribe__input"
+            placeholder="USER@HOST"
+            required
+            aria-label="Email address"
+          >
+          <button type="submit" class="subscribe__btn" id="subscribe-button">[ ENTER ]</button>
+        </div>
+      </form>
+      <p class="subscribe__msg" id="subscribe-message"></p>
+    </section>
+    {{ end }}
+
+    <div class="post__nav">
+      {{ if $isPost }}
+      <a href="/blogs/">&lt;&lt; BACK TO DIRECTORY</a>
+      {{ else }}
+      <a href="/">&lt;&lt; BACK TO MAIN MENU</a>
+      {{ end }}
+    </div>
+  </div>
+</article>
 {{ end }}

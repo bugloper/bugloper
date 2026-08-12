@@ -7,7 +7,7 @@ weight: 5
 
 Get in touch with me.
 
-**Email:** bugloper@hey.com
+**Email:** bugloper@gmail.com
 
 **GitHub:** [github.com/bugloper](https://github.com/bugloper)
 

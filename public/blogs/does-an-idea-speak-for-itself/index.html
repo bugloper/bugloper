@@ -56,42 +56,106 @@ Language is a tool of communication. Often, highly intelligent individuals with 
 
   
 
-  <link rel="stylesheet" href="http://localhost:1313/css/main.css">
+  <link rel="preload" href="/fonts/vt323-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="/css/main.css">
+<meta name="theme-color" content="#000070">
 </head>
 
 <body>
   <header><a class="skip-link" href="#main-content">Skip to main content</a>
+
+<div class="menubar">
+  <a class="menubar__logo" href="/">&#9632; BUGLOPER.SYS</a>
+  <a href="/blogs/"><span class="hotkey">B</span>log</a>
+  <a href="/about/"><span class="hotkey">A</span>bout</a>
+  <a href="/projects/"><span class="hotkey">P</span>rojects</a>
+  <a href="/contact/"><span class="hotkey">C</span>ontact</a>
+  <span class="menubar__clock" id="dos-clock">--:-- --</span>
+</div>
 </header>
   <main id="main-content">
-<div class="blog-container">
-    <div class="blog-wrapper">
-        <article class="blog-post">
-            <header class="blog-post-header">
-                <h1 class="blog-post-title">Does An Idea Speak For Itself?</h1>
-            </header>
-            
-            <div class="blog-post-content">
-                <p>Language is far more deeply rooted in reality than we often realize. Without language, how do we really do anything?  I believe that without language, there is no e = mc²—at least not in the ultimate sense that language gives birth to the laws of physics. But without language, how do we understand, grasp, or know it in the first place?</p>
+
+<article class="win">
+  <div class="win__bar">DOES-AN-IDEA-SPEAK-F.TXT</div>
+  <div class="win__body">
+    <h1 class="post__title">Does An Idea Speak For Itself?</h1>
+
+    
+    <p class="post__meta">
+      DATE: 2025-12-09 &middot; RUNTIME: 2 MIN &middot; 285 WORDS
+    </p>
+    
+
+    <div class="post__body">
+      <p>Language is far more deeply rooted in reality than we often realize. Without language, how do we really do anything?  I believe that without language, there is no e = mc²—at least not in the ultimate sense that language gives birth to the laws of physics. But without language, how do we understand, grasp, or know it in the first place?</p>
 <p>Language is a tool of communication. Often, highly intelligent individuals with strong technical skills feel underappreciated. Those working in corporate or bureaucratic environments frequently blame their circumstances. While this is certainly a variable, I believe the roots of this experience go back to the earliest forms of human communication. It&rsquo;s fundamental to biology. Our brains are designed so that their chemical signals can be understood or made sense of through language. In this way, language is an evolutionary aspect of humans.</p>
 <p>If someone tries to convey a unique idea with poor communication, it often leads to confusion. The lack of clarity forces the brain to make sense of it using all the knowledge it has previously acquired, and connecting the dots is highly contextual to each person’s mind—although the mechanics of how human brains connect dots are generally similar. Perhaps if certain aspects of the idea have already been communicated and understood, even a poorly articulated message might not be an issue, as the brain already has the most number of variables to grasp the concept.</p>
 <p>The definition of things also plays a vital role. Even with articulate communication, if the speaker and the listener have fundamentally different understandings of the subject matter—what a particular word means in that context—it is no less confusing than poor communication.</p>
 <p>So, does an idea speak for itself?</p>
 
-            </div>
-            
-            <footer class="blog-post-footer">
-                <a href="/" class="back-link">← Back to Home</a>
-            </footer>
-        </article>
     </div>
-</div>
-
-  </main>
-  <footer><small>
-   | 
-</small></footer>
 
     
+    <section class="subscribe">
+      <h3>&gt; SUBSCRIBE.EXE</h3>
+      <p class="subscribe__hint">LEAVE YOUR ADDRESS ON THE BOARD. NEW POSTS GET MAILED OUT.</p>
+      <form class="subscribe__form" action="https://api.web3forms.com/submit" method="POST" id="blog-subscribe-form">
+        <input type="hidden" name="access_key" value="2bb4a9c6-b5e1-41c1-92f4-1ea5ef778d12">
+        <input type="hidden" name="subject" value="New Blog Subscription">
+        <input type="checkbox" name="botcheck" style="display: none;" tabindex="-1" autocomplete="off">
+        <div class="subscribe__row">
+          <input
+            type="email"
+            name="email"
+            id="subscribe-email"
+            class="subscribe__input"
+            placeholder="USER@HOST"
+            required
+            aria-label="Email address"
+          >
+          <button type="submit" class="subscribe__btn" id="subscribe-button">[ ENTER ]</button>
+        </div>
+      </form>
+      <p class="subscribe__msg" id="subscribe-message"></p>
+    </section>
+    
+
+    <div class="post__nav">
+      
+      <a href="/blogs/">&lt;&lt; BACK TO DIRECTORY</a>
+      
+    </div>
+  </div>
+</article>
+
+  </main>
+  <footer><div class="statusbar">
+  <a href="/about/"><span class="fkey">F1</span>ABOUT</a>
+  <a href="/blogs/"><span class="fkey">F2</span>BLOGS</a>
+  <a href="/projects/"><span class="fkey">F3</span>PROJECTS</a>
+  <a href="/contact/"><span class="fkey">F4</span>CONTACT</a>
+  <span class="statusbar__mem">(C) 2026  &middot; 655360 BYTES FREE</span>
+</div>
+</footer>
+
+  <script src="/js/main.js" defer></script>
+<script>
+  
+  (function () {
+    var el = document.getElementById('dos-clock');
+    if (!el) return;
+    function tick() {
+      var d = new Date();
+      var h = d.getHours();
+      var m = d.getMinutes();
+      var ap = h < 12 ? 'am' : 'pm';
+      h = h % 12 || 12;
+      el.textContent = (h < 10 ? ' ' : '') + h + ':' + (m < 10 ? '0' : '') + m + ap;
+    }
+    tick();
+    setInterval(tick, 20000);
+  })();
+</script>
 </body>
 
 </html>

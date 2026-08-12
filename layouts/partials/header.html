@@ -1,1 +1,11 @@
 <a class="skip-link" href="#main-content">{{ i18n "skip-link" }}</a>
+
+<div class="menubar">
+  <a class="menubar__logo" href="{{ .Site.Home.RelPermalink }}">&#9632; BUGLOPER.SYS</a>
+  {{- range .Site.Menus.main.ByWeight }}
+    {{- if ne .URL $.Site.Home.RelPermalink }}
+  <a href="{{ .URL }}"><span class="hotkey">{{ substr .Name 0 1 }}</span>{{ substr .Name 1 }}</a>
+    {{- end }}
+  {{- end }}
+  <span class="menubar__clock" id="dos-clock">--:-- --</span>
+</div>
